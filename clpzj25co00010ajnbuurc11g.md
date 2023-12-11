@@ -103,6 +103,3 @@ const Child = ({ value, setValue }) => {
 In this refactored example, we have lifted the state up to the Parent component. The Parent component now passes both the value and setValue functions as props to the Child component. When the button is clicked, the handleClick function in the Parent component updates the state value using setValue. The updated value is then passed down to the Child component as a prop. This approach adheres to the unidirectional data flow principle and promotes component encapsulation.
 
 In conclusion, updating the state when a prop changes is an anti-pattern in React development. It goes against the principles of unidirectional data flow, breaks encapsulation, and can introduce bugs and complexity. By adhering to React's best practices, such as lifting state up and using appropriate hooks like useEffect, you can write more maintainable and efficient code. Remember, React provides powerful tools to handle prop changes without directly modifying the component's state.
-
-
-[![Attribution-NonCommercial-NoDerivatives 4.0 International (CC BY-NC-ND 4.0)](https://licensebuttons.net/l/by-nc-nd/4.0/88x31.png)](https://creativecommons.org/licenses/by-nc-nd/4.0)
