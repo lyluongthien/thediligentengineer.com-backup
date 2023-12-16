@@ -4,7 +4,6 @@ datePublished: Sun Dec 10 2023 13:35:33 GMT+0000 (Coordinated Universal Time)
 cuid: clpzj25co00010ajnbuurc11g
 slug: an-interesting-reactjs-interview-question-about-props-and-state-how-to-update-a-state-when-a-prop-of-a-component-change
 canonical: https://github.com/lyluongthien/on-the-engineering-side/blob/main/react/001.an-interesting-reactjs-interview-question-about-props-and-state.md
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1702215277758/9124976c-b80c-4430-aace-ab7934058e18.jpeg
 tags: reactjs
 
 ---
