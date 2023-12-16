@@ -3,7 +3,6 @@ title: "The C in Golang ? Let's glance !"
 datePublished: Mon Dec 11 2023 13:34:13 GMT+0000 (Coordinated Universal Time)
 cuid: clq0yga2k000809jsclrfh7e1
 slug: the-c-in-golang-lets-glance
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1702301025753/f0671959-5929-485b-b063-7e9139a4c422.jpeg
 tags: c, go, golang, Go
 
 ---
