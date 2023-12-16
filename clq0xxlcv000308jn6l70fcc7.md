@@ -3,7 +3,6 @@ title: "Another Functional Options Pattern in Golang article"
 datePublished: Mon Dec 11 2023 13:19:41 GMT+0000 (Coordinated Universal Time)
 cuid: clq0xxlcv000308jn6l70fcc7
 slug: another-functional-options-pattern-in-golang-article
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1702300727428/acf0a536-8eea-4501-b301-27d9c439d3fc.jpeg
 tags: golang, backend
 
 ---
