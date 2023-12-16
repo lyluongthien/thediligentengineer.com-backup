@@ -4,8 +4,8 @@ datePublished: Wed Sep 07 2022 17:00:00 GMT+0000 (Coordinated Universal Time)
 cuid: clq0yx7to000108l8cxexdlb3
 slug: a-glance-at-the-rust-swc-re-up
 canonical: https://www.slideshare.net/LyLuongThien/a-glance-at-the-rust-swc
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1702302283597/56814450-5359-4a11-ac14-babc9345de58.png
-tags: javascript, typescript, rust, compiler
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1702709260470/b29da4a8-7897-4abb-819c-7883339d63a0.png
+tags: presentations, javascript, typescript, rust, compiler
 
 ---
 
