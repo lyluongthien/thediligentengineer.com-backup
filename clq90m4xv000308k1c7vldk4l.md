@@ -42,7 +42,7 @@ graph LR
   B2 --> D
   D --> E(Factory)
   E --> F(Service Layer)
-  F --> A1 & B1 (Context Collaboration)
+  F --> A1 & B1(Context Collaboration)
 ```
 
 ### Advantages of DDD
