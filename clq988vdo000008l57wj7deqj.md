@@ -8,21 +8,13 @@ tags: documentation, diagram
 
 ---
 
-Software development needs clarity. Architects map out functionalities, and developers navigate complex interactions. Enter Mermaid JS, a lightweight diagramming language that weaves magic within text documents. Today, we'll explore its use case diagrams and sequence diagrams -- vital tools for architects and developers alike.
+Software development needs clarity. Architects map out functionalities, and developers navigate complex interactions. Enter Mermaid JS, a lightweight diagramming language that weaves magic within text documents. Today, we'll explore its sequence diagrams -- vital tools for architects and developers alike.
 
 Mermaid in a Nutshell:
 
 Imagine crafting diagrams embedded within Markdown or code! No clunky software, just concise text definitions that magically transform into elegant visuals. Markdown-inspired syntax makes learning a breeze, even for Mermaid newbies.
 
-Why Use Cases and Sequences?
-
-Use case diagrams:
-
--   Visualize functionalities: Map actors (users, systems) and their interactions with your software.
--   Prioritize development: Quickly identify core functionalities and tackle them first.
--   Improve communication: Enhance discussions between architects, developers, and stakeholders.
-
-Sequence diagrams:
+About Sequence diagrams:
 
 -   Model interactions: Diagram the messages exchanged between components in specific scenarios.
 -   Identify complexities: Uncover potential bottlenecks or race conditions early on.
@@ -33,7 +25,7 @@ Mermaid Makes These Diagrams Sing:
 Example : Login Sequence Diagram (Mermaid code):
 ```mermaid
 sequenceDiagram
-participant User
+actor User
 participant Auth Server
 participant Application
 User->>Auth Server: Login request (username, password)
