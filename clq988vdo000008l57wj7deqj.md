@@ -30,25 +30,7 @@ Sequence diagrams:
 
 Mermaid Makes These Diagrams Sing:
 
-Example 1: Online Store Use Case Diagram (Mermaid code):
-
-
-```mermaid
-usecase diagram
-Customer -> Online Store: Browse Products
-Online Store -> Customer: Show Product Details
-Customer -> Online Store: Add Product to Cart
-Customer -> Online Store: Checkout
-Online Store -> Payment Gateway: Process Payment
-Online Store -> Warehouse: Ship Order
-Online Store -> Customer: Send Order Confirmation
-
-```
-
-
-Example 2: Login Sequence Diagram (Mermaid code):
-
-
+Example : Login Sequence Diagram (Mermaid code):
 ```mermaid
 sequenceDiagram
 participant User
