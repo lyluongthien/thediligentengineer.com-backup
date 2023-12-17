@@ -1,5 +1,5 @@
 ---
-title: "Another Functional Options Pattern in Golang article"
+title: "Another article about Functional Options Pattern in Golang"
 datePublished: Mon Dec 11 2023 13:19:41 GMT+0000 (Coordinated Universal Time)
 cuid: clq0xxlcv000308jn6l70fcc7
 slug: another-functional-options-pattern-in-golang-article
