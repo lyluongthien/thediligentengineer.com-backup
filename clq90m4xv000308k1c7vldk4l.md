@@ -24,26 +24,6 @@ DDD equips developers with a powerful arsenal of tools to tame the domain beast:
 
 5\. Continuous Evolution: DDD is an iterative process, adapting to evolving domain understanding through constant refactoring and model adjustments.
 
-### Mermaid Diagram: Decoding DDD's Inner Workings
-
-```mermaid
-graph LR
-  subgraph Bounded Context 1
-    A1(Entity) --> A2(Aggregate)
-    A2 --> A3(Value Object)
-  end
-  subgraph Bounded Context 2
-    B1(Entity) --> B2(Aggregate)
-    B2 --> B3(Value Object)
-  end
-  A1 --> C(Ubiquitous Language)
-  B1 --> C
-  A2 --> D(Repository)
-  B2 --> D
-  D --> E(Factory)
-  E --> F(Service Layer)
-  F --> A1 & B1(Context Collaboration)
-```
 
 ### Advantages of DDD
 
