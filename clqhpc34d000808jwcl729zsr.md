@@ -165,34 +165,50 @@ for {
 Sequence diagram
 
 ```mermaid
-
 sequenceDiagram
     participant Client
     participant Server
 
-    Client->>Server: Dial Server
-    Server-->>Client: Accept Connection
+    %% Section 1: Introduction %%
+    Client->>Server: Open connection
+    Server-->>Client: Connection established
 
-    loop Stream File Data
-        Client->>Client: Read Chunk
-        Client->>Server: Send Chunk
-        Server-->>Client: Chunk Received
+    %% Section 2: File Server Setup %%
+    Client->>Server: Request to stream file
+    Server-->>Client: Acknowledge request
+
+    %% Section 3: Streaming File from Server %%
+    Client->>Server: Send file name
+    Server-->>Client: Acknowledge file name
+
+    Client->>Server: Send file size
+    Server-->>Client: Acknowledge file size
+
+    loop Stream File in Chunks
+        Client->>Server: Send file chunk
+        Server-->>Client: Acknowledge received chunk
     end
 
-    Client->>Client: Get File Size
-    Client->>Server: Send File Size
-    Server-->>Client: File Size Received
+    %% Section 4: File Client Setup %%
+    Client->>Server: Open connection for file transfer
+    Server-->>Client: Acknowledge file transfer connection
 
-    Server->>Server: Create Buffer for Size
-    Server->>Client: Read File Size
-    Client-->>Server: File Size Sent
+    %% Section 5: Streaming File to Server %%
+    Client->>Server: Send file name
+    Server-->>Client: Acknowledge file name
 
-    Server->>Server: Create Buffer for Data
-    loop Stream File Data
-        Server->>Client: Read Chunk
-        Client-->>Server: Chunk Received
-        Server->>Server: Write to File
+    Client->>Server: Send file size
+    Server-->>Client: Acknowledge file size
+
+    loop Stream File in Chunks
+        Client->>Server: Send file chunk
+        Server-->>Client: Acknowledge received chunk
     end
+
+    %% Section 6: Conclusion %%
+    Client->>Server: Close connection
+    Server-->>Client: Connection closed
+
 ```
 
 ## Conclusion
