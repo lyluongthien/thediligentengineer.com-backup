@@ -168,48 +168,43 @@ Sequence diagram
 sequenceDiagram
     participant Client
     participant Server
-
-    %% Section 1: Introduction %%
-    Client->>Server: Open connection
-    Server-->>Client: Connection established
-
-    %% Section 2: File Server Setup %%
-    Client->>Server: Request to stream file
-    Server-->>Client: Acknowledge request
-
-    %% Section 3: Streaming File from Server %%
-    Client->>Server: Send file name
-    Server-->>Client: Acknowledge file name
-
-    Client->>Server: Send file size
-    Server-->>Client: Acknowledge file size
-
-    loop Stream File in Chunks
-        Client->>Server: Send file chunk
-        Server-->>Client: Acknowledge received chunk
+    Client->>Server: Initiate TCP connection
+    Server->>Client: Accept TCP connection
+    loop Until file is fully transferred
+        Client->>Client: Read file chunk
+        Client->>Server: Send chunk header (size, sequence number, etc.)
+        Server->>Client: Acknowledge chunk header
+        Client->>Server: Send chunk data
+        Server->>Client: Acknowledge chunk data
+        Server->>Server: Write chunk to file
     end
-
-    %% Section 4: File Client Setup %%
-    Client->>Server: Open connection for file transfer
-    Server-->>Client: Acknowledge file transfer connection
-
-    %% Section 5: Streaming File to Server %%
-    Client->>Server: Send file name
-    Server-->>Client: Acknowledge file name
-
-    Client->>Server: Send file size
-    Server-->>Client: Acknowledge file size
-
-    loop Stream File in Chunks
-        Client->>Server: Send file chunk
-        Server-->>Client: Acknowledge received chunk
-    end
-
-    %% Section 6: Conclusion %%
-    Client->>Server: Close connection
-    Server-->>Client: Connection closed
+    Client->>Server: Send file transfer completion signal
+    Server->>Client: Acknowledge completion
+    Server->>Client: Close TCP connection
+    Client->>Server: Close TCP connection
 
 ```
+> Explanation
+1.  Initiate TCP connection: The client starts the process by establishing a TCP connection with the server.
+2.  Accept TCP connection: The server accepts the incoming connection request from the client.
+3.  Read file chunk: The client reads a portion of the file into a buffer (chunk).
+4.  Send chunk header: The client sends information about the chunk (size, sequence number, etc.) to the server.
+5.  Acknowledge chunk header: The server confirms receipt of the chunk header.
+6.  Send chunk data: The client sends the actual chunk data to the server.
+7.  Acknowledge chunk data: The server confirms receipt of the chunk data.
+8.  Write chunk to file: The server writes the received chunk to the destination file.
+9.  Loop until completion: Steps 3-8 repeat until the entire file has been transferred.
+10. Send completion signal: The client sends a signal to the server indicating that the file transfer is complete.
+11. Acknowledge completion: The server acknowledges the completion signal.
+12. Close TCP connection: Both the client and server close the TCP connection.
+
+### Key Points:
+
+-   Chunking: The file is divided into smaller chunks for efficient transmission and potential retransmission if errors occur.
+-   Headers: Chunk headers contain metadata about the chunk, such as its size and sequence number, for proper reassembly at the server.
+-   Acknowledgments: Server acknowledgments ensure reliable transfer and allow for retransmission if necessary.
+-   Completion signal: The completion signal marks the end of the file transfer process.
+-   TCP connection management: The TCP connection is established, maintained, and closed to ensure reliable data transfer.
 
 ## Conclusion
 
