@@ -3,6 +3,7 @@ title: "Streaming Large Files over TCP"
 datePublished: Sat Dec 23 2023 06:51:06 GMT+0000 (Coordinated Universal Time)
 cuid: clqhpc34d000808jwcl729zsr
 slug: streaming-large-files-over-tcp
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1703325065078/8ca7ff0f-ef1d-4f4b-81c4-2213b7a5473f.jpeg
 ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1703314239666/1f091b98-b3f2-425a-a6b9-48f3a9b5ed9e.jpeg
 tags: go, golang, streaming
 
@@ -10,7 +11,7 @@ tags: go, golang, streaming
 
 When dealing with large files in development, the traditional approach of reading the entire file into memory can lead to memory-related issues. To overcome this challenge, streaming becomes a crucial concept. Streaming involves sending files in smaller, manageable chunks rather than all at once. In this article, we will explore how to implement a file server in Golang that can efficiently stream large files over TCP connections.
 
-![](https://cdn.hashnode.com/res/hashnode/image/upload/v1703314200867/af224a8a-8929-4558-bb97-fed4cd7d67a6.jpeg align="center")
+<img align="center" src="https://cdn.hashnode.com/res/hashnode/image/upload/v1703314200867/af224a8a-8929-4558-bb97-fed4cd7d67a6.jpeg" alt="cover image" width="387" height="387"/>
 
 ## Setting the Stage
 
@@ -184,7 +185,8 @@ sequenceDiagram
     Client->>Server: Close TCP connection
 
 ```
-> Explanation
+
+>
 1.  Initiate TCP connection: The client starts the process by establishing a TCP connection with the server.
 2.  Accept TCP connection: The server accepts the incoming connection request from the client.
 3.  Read file chunk: The client reads a portion of the file into a buffer (chunk).
