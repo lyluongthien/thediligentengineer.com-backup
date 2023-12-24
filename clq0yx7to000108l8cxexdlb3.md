@@ -11,7 +11,7 @@ tags: presentations, javascript, typescript, rust, compiler
 
 On September 8, 2022, I had the privilege of presenting a cutting-edge Javascript and Typescript compiler to my team at TIKI. Allow me to introduce SWC, a revolutionary high-performance compiler crafted in Rust, boasting a customizable plugin API. This innovation has the potential to bring about significant improvements in the development experience (DX).
 
-<iframe src="https://www.slideshare.net/slideshow/embed_code/key/Goa9BlhsZpY42E?startSlide=1" width="700" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen class="m-auto" style="margin: auto;"></iframe> 
+<iframe src="https://www.slideshare.net/slideshow/embed_code/key/Goa9BlhsZpY42E?startSlide=1" width="700" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen class="m-auto" style="margin: auto;width: fit-content;"></iframe> 
 
 **[Slideshare.net: A glance at the Rust SWC](https://www.slideshare.net/LyLuongThien/a-glance-at-the-rust-swc)** from **[Thien Ly](https://www.slideshare.net/LyLuongThien)**
 
