@@ -4,6 +4,7 @@ datePublished: Wed Nov 09 2022 17:00:00 GMT+0000 (Coordinated Universal Time)
 cuid: clq6xe5mo000409l67wfq4d5y
 slug: garbage-collectors-and-memory-leaks-in-nodejs-v8-re-up
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1702709463231/20269846-000a-4585-b557-3e1ae32d2174.png
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1703389329990/90fbd93a-9c7d-4e41-8b38-7ed8877b0e4b.png
 tags: presentations, javascript, nodejs, typescript, v8, v8-engine, garbagecollection
 
 ---
