@@ -9,10 +9,12 @@ tags: presentations, javascript, typescript, rust, compiler
 
 ---
 
-On September 8, 2022, I held a presentation about a Javascript and Typescript compiler for my team at TIKI. It is the SWC - the new high-performance compiler written in Rust with customizable plugin API. This could make some massive enhancements to the DX(development experience) for your team in Node and Browser Products.  
-  
-Slide URL: [https://www.slideshare.net/LyLuongThien/a-glance-at-the-rust-swc](https://www.slideshare.net/LyLuongThien/a-glance-at-the-rust-swc)
+On September 8, 2022, I had the privilege of presenting a cutting-edge Javascript and Typescript compiler to my team at TIKI. Allow me to introduce SWC, a revolutionary high-performance compiler crafted in Rust, boasting a customizable plugin API. This innovation has the potential to bring about significant improvements in the development experience (DX).
 
-Introducing the new high-performance Javascript and Typescript compiler which is written in Rust and the demonstrations at Tiki Co., Ltd. ([tiki.vn](http://tiki.vn)) Internal sharing session at Tiki Co., Ltd. on September 8 2022 by Thien Ly
+The SWC compiler, being written in Rust, ensures not only robustness but also efficiency, paving the way for a smoother and more productive development process. During the presentation at Tiki Co., Ltd. ([tiki.vn](http://tiki.vn)), I showcased the compiler's capabilities and demonstrated how it could elevate our development workflows.
 
-Read more about the SWC document here: [https://swc.rs](http://swc.rs)
+For those eager to delve deeper into SWC, I encourage you to explore the comprehensive documentation available at https://swc.rs. It provides an in-depth understanding of the compiler's features and functionalities, offering a valuable resource for leveraging its full potential.
+
+To revisit the highlights of the presentation or share insights with colleagues, you can access the slides through the following link:  [A Glance at the Rust SWC](https://www.slideshare.net/LyLuongThien/a-glance-at-the-rust-swc)
+
+Thank you for your attention, and I look forward to the positive impact that SWC can bring to our development endeavors.
