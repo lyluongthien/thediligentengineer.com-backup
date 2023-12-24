@@ -1,5 +1,5 @@
 ---
-title: "Garbage collectors and Memory Leaks in Nodejs - V8 [slideshare]"
+title: "Garbage Collectors and Memory Leaks in Nodejs - V8 [slideshare]"
 datePublished: Wed Nov 09 2022 17:00:00 GMT+0000 (Coordinated Universal Time)
 cuid: clq6xe5mo000409l67wfq4d5y
 slug: garbage-collectors-and-memory-leaks-in-nodejs-v8-re-up
