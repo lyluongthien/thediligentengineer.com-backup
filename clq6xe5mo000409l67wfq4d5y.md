@@ -15,7 +15,7 @@ tags: presentations, javascript, nodejs, typescript, v8, v8-engine, garbagecolle
 
 On November 10, 2022, I had the privilege of conducting an insightful workshop on "Garbage Collection and Memory Leaks in Node.js V8" at  [TIKI](https://www.linkedin.com/company/tiki-vn/). The session aimed to deepen our understanding of these critical aspects, shedding light on best practices and strategies to optimize performance.
 
-<iframe src="https://www.slideshare.net/slideshow/embed_code/key/KRqPHOgEf3bgg8?startSlide=2" width="700" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen class="m-auto" style="margin: auto;width: fit-content;"></iframe> 
+<iframe src="https://www.slideshare.net/slideshow/embed_code/key/KRqPHOgEf3bgg8?startSlide=2" width="700" height="500" frameborder="0" marginwidth="0" marginheight="0" scrolling="no" allowfullscreen class="m-auto" style="margin: auto;width: 100%;"></iframe> 
 
 **[Slideshare.net: Garbage collectors and Memory Leaks in Nodejs - V8](https://www.slideshare.net/LyLuongThien/garbage-collectors-and-memory-leaks-in-nodejs-v8)** from **[Thien Ly](https://www.slideshare.net/LyLuongThien)**
 
