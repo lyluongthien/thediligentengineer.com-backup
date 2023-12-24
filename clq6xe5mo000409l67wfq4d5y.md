@@ -20,7 +20,7 @@ On November 10, 2022, I had the privilege of conducting an insightful workshop o
 **[Slideshare.net: Garbage collectors and Memory Leaks in Nodejs - V8](https://www.slideshare.net/LyLuongThien/garbage-collectors-and-memory-leaks-in-nodejs-v8)** from **[Thien Ly](https://www.slideshare.net/LyLuongThien)**
 
 
-Additionally, the workshop was captured in a Vietnamese-language video hosted on Tiki Developer's YouTube channel. You can view the recording at https://youtu.be/u3Dvh-ofzNg.
+Additionally, the workshop was captured in a Vietnamese-language video hosted on Tiki Developer's YouTube channel. You can view the recording at [youtu.be/u3Dvh-ofzNg](https://youtu.be/u3Dvh-ofzNg).
 
 To further engage in discussions and access additional resources related to the workshop, you can visit the TIKI Community forum post Building a Super App Workshop: [Sharing Garbage Collectors and Memory Leaks in Node.js V8](https://web.archive.org/web/20221130162752/https://community.tiki.vn/t/building-a-super-app-workshop-sharing-garbage-collectors-and-memory-leaks-in-nodejs-v8/8548)
 
