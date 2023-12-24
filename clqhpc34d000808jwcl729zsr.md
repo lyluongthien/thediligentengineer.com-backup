@@ -19,7 +19,7 @@ Let's begin by understanding the importance of streaming and the pitfalls of loa
 
 ## Building a Simple File Server
 
-To implement a file server in Golang, we'll leverage the net package for handling network connections and the io package for reading and writing data. Additionally, we'll use a buffer to efficiently store and manage the streaming data.
+To implement a file server in Golang, we'll leverage the `net` package for handling network connections and the `io` package for reading and writing data. Additionally, we'll use a buffer to efficiently store and manage the streaming data.
 
 ```go
 // File Server
@@ -68,7 +68,7 @@ func handleConnection(conn net.Conn) {
 
 ## Implementing the Client
 
-Now that we have our file server, let's create a client program that sends a file to the server. We'll use the net and io packages, along with a buffer for efficient data transfer.
+Now that we have our file server, let's create a client program that sends a file to the server. We'll use the `net` and `io` packages, along with a buffer for efficient data transfer.
 
 ```go
 // File Client
@@ -185,8 +185,7 @@ sequenceDiagram
     Client->>Server: Close TCP connection
 
 ```
-
->
+ 
 1.  Initiate TCP connection: The client starts the process by establishing a TCP connection with the server.
 2.  Accept TCP connection: The server accepts the incoming connection request from the client.
 3.  Read file chunk: The client reads a portion of the file into a buffer (chunk).
@@ -210,4 +209,4 @@ sequenceDiagram
 
 ## Conclusion
 
-In this article, we explored the challenges associated with handling large files in Golang and demonstrated how to implement a file server capable of streaming files over TCP connections. Leveraging the net and io packages, along with effective buffer usage, ensures efficient and reliable large file transfers. By including the file size as part of the data, we address the issue of not knowing the file size in advance, enabling seamless and secure streaming.
+In this article, we explored the challenges associated with handling large files in Golang and demonstrated how to implement a file server capable of streaming files over TCP connections. Leveraging the `net` and `io` packages, along with effective buffer usage, ensures efficient and reliable large file transfers. By including the file size as part of the data, we address the issue of not knowing the file size in advance, enabling seamless and secure streaming.
