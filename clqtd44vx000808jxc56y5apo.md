@@ -11,17 +11,18 @@ tags: go, compiler
 
 
 
-In the quest for efficient code, Go's compiler employs a powerful technique called function inlining.
+The process of grouping smaller functions into their respective callers in Go Compiler is known as inlining. This optimization was often done by hand in the early days of computing. Inlining is now one of the essential optimizations that are executed automatically throughout the compilation process.
 
-## Unveiling the Mechanism
+## The Mechanism
 
-- Function Identification: The compiler scans your code, identifying functions suitable for inlining. It prioritizes smaller, frequently called functions with simple bodies.
+Function Identification: The compiler scans your code, identifying functions suitable for inlining. It prioritizes smaller, frequently called functions with simple bodies.
 
-- Eliminating Overhead: Instead of generating a separate function call, the compiler replaces the call with the function's code, removing the overhead of:
+Eliminating Overhead: Instead of generating a separate function call, the compiler replaces the call with the function's code, removing the overhead of:
   - Jumping to a different memory location
   - Passing arguments
   - Returning results
-- Code Integration: The inlined function's code is seamlessly integrated into the caller's code, creating a single, streamlined block.
+
+Code Integration: The inlined function's code is seamlessly integrated into the caller's code, creating a single, streamlined block.
 
 ## Advantages of Inlining
 
