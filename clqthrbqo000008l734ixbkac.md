@@ -50,7 +50,7 @@ subgraph "findAndReplacePattern function"
         Compare -- No --> Iterate
         Compare -- Yes --> AddToResult["Add word to result array"]
         AddToResult --> Iterate
-    End[End]
+    End(End)
 end
 ```
 
