@@ -8,6 +8,7 @@ tags: typescript, leetcode
 
 ---
 
+> Try to solve the solution before read this article at: https://leetcode.com/problems/find-and-replace-pattern
 # Intuition
 <!-- Describe your first thoughts on how to solve this problem. -->
 **Thoughts**:
@@ -75,3 +76,6 @@ function findAndReplacePattern(words: string[], pattern: string): string[] {
 };
 // console.log(findAndReplacePattern(words, pattern))
 ```
+
+# Reference
+The LeetCode submission: https://leetcode.com/problems/find-and-replace-pattern/submissions/1133020282/
