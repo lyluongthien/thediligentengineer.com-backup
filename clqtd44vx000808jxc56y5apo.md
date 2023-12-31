@@ -52,7 +52,7 @@ flowchart TB
         C--3. Append (inlining)-->D
        
     end
-     SC--4. Compile export --> F
+     SC--4. build --> F
 
 ```
 ## Example
