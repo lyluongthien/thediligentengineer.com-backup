@@ -31,7 +31,6 @@ Reduced function call overhead
 Enhanced optimization opportunities
 Code Size Reduction: Elimination of redundant code in some cases
 Improved Cache Utilization: Better spatial locality of code and data
-## Diagrammatic Representation
 
 ```mermaid
 graph TD
@@ -41,7 +40,7 @@ graph TD
     B --> A
 
 subgraph Inlined Code
-    A[Caller Function] --> C{Function B Body (Inlined)}
+    A[Caller Function] --> C{"Function B Body (Inlined)"}
 end
 ```
 ## Example
