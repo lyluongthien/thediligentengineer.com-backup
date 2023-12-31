@@ -33,15 +33,27 @@ Code Size Reduction: Elimination of redundant code in some cases
 Improved Cache Utilization: Better spatial locality of code and data
 
 ```mermaid
-graph TD
-    A[Caller Function] --> B(Function B)
-    B --> C{Function B Body}
-    C --> A{Merge B Body into A}
-    A --> E{Executable Bin}
+flowchart TB
 
-subgraph Inlined Code
-    A[Caller Function] --> C{"Function B Body (Inlined)"}
-end
+    X[1. Start compile]
+    X-->SC
+    F[Executable bin] 
+
+    subgraph SC[Source Code main.go]
+        
+        subgraph A[Function main]
+            D[function main Body]
+        end  
+
+        subgraph B["function a()"]
+            C["function a() body"]
+        end 
+        A--2. Call(1) -->B
+        C--3. Append (inlining)-->D
+       
+    end
+     SC--4. Compile export --> F
+
 ```
 ## Example
 
