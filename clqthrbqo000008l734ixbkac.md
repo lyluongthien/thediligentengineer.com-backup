@@ -37,7 +37,7 @@ tags: typescript, leetcode
 -   Time complexity: O(n * m), where n is the number of words in the `words` array and m is the length of each word (and the `pattern`). This is due to iterating through each word and transforming it character by character.
 -   Space complexity: O(m), where m is the length of the words and pattern. The space used is primarily for the hash map in `wordToId` and the transformed strings.
 
-# flow
+# Flow
 
 ```mermaid
 graph TD
