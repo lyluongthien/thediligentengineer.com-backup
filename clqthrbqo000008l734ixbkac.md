@@ -41,15 +41,15 @@ tags: typescript, leetcode
 ```mermaid
 graph TD
 subgraph "findAndReplacePattern function"
-Start("Start") --> Transform["Transform pattern using wordToId"]
-Transform --> Iterate["Iterate through words array"]
-Iterate --> CheckLength["Check if word length matches pattern length"]
-CheckLength -- No --> End["End"]
-CheckLength -- Yes --> Transform2["Transform word using wordToId"]
-Transform2 --> Compare["Compare transformed word with pattern"]
-Compare -- No --> Iterate
-Compare -- Yes --> AddToResult["Add word to result array"]
-AddToResult --> Iterate
+    Start("Start") --> Transform["Transform pattern using wordToId"]
+    Transform --> Iterate["Iterate through words array"]
+    Iterate --> CheckLength{"Check if word length matches pattern length"}
+    CheckLength -- No --> End("End")
+    CheckLength -- Yes --> Transform2["Transform word using wordToId"]
+    Transform2 --> Compare{"Compare transformed word with pattern"}
+    Compare -- No --> Iterate
+    Compare -- Yes --> AddToResult["Add word to result array"]
+    AddToResult --> Iterate
 End[End]
 end
 ```
