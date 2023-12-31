@@ -86,6 +86,7 @@ func main() {
 - Over-inlining: This can lead to larger code size and potential cache misses.
 - Readability: Excessive inlining can impact code clarity.
 - Benchmarking: Measure performance gains to ensure effectiveness.
+
 ## Conclusion
 
 Function inlining is a potent optimization tool in Go, but its judicious application is crucial. Understanding its mechanics and trade-offs empowers you to write efficient and maintainable Go code. By carefully considering function design, profiling performance, and leveraging compiler hints when necessary, you can effectively harness the power of inlining for optimal code execution.
