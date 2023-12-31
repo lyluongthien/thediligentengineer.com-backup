@@ -38,7 +38,6 @@ tags: typescript, leetcode
 -   Space complexity: O(m), where m is the length of the words and pattern. The space used is primarily for the hash map in `wordToId` and the transformed strings.
 
 # Flow
-
 ```mermaid
 graph TD
 subgraph "findAndReplacePattern function"
