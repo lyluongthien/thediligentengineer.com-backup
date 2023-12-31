@@ -34,10 +34,10 @@ Improved Cache Utilization: Better spatial locality of code and data
 
 ```mermaid
 graph TD
-    A[Caller Function] --> B(Call Function B)
+    A[Caller Function] --> B(Function B)
     B --> C{Function B Body}
-    C --> B
-    B --> A
+    C --> A{Merge B Body into A}
+    A --> E{Executable Bin}
 
 subgraph Inlined Code
     A[Caller Function] --> C{"Function B Body (Inlined)"}
