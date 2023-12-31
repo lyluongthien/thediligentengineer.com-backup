@@ -8,7 +8,7 @@ tags: typescript, leetcode
 
 ---
 
-> Try to solve the solution before read this article at: https://leetcode.com/problems/find-and-replace-pattern
+> Try to solve the solution before read this article at: [leetcode.com/problems/find-and-replace-pattern](https://leetcode.com/problems/find-and-replace-pattern)
 # Intuition
 <!-- Describe your first thoughts on how to solve this problem. -->
 **Thoughts**:
@@ -78,4 +78,4 @@ function findAndReplacePattern(words: string[], pattern: string): string[] {
 ```
 
 # Reference
-The LeetCode submission: https://leetcode.com/problems/find-and-replace-pattern/submissions/1133020282/
+The LeetCode submission: [leetcode.com/problems/find-and-replace-pattern/submissions/1133020282](https://leetcode.com/problems/find-and-replace-pattern/submissions/1133020282/)
