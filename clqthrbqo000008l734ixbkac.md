@@ -1,5 +1,5 @@
 ---
-title: "Write an O(m*n) LeetCode solution of find-and-replace-pattern that beats 100.00% of users with TypeScript, Rust, and Golang [54ms]"
+title: "Write an O(m*n) LeetCode solution of find-and-replace-pattern that beats 100.00% of users with TypeScript [54ms], Rust [0ms], and Golang [0ms]"
 datePublished: Sun Dec 31 2023 12:52:14 GMT+0000 (Coordinated Universal Time)
 cuid: clqthrbqo000008l734ixbkac
 slug: write-a-find-and-replace-pattern-leetcode-solution-that-beats-10000-of-users-with-typescript-54ms
