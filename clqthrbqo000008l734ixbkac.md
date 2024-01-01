@@ -157,4 +157,4 @@ func findAndReplacePattern(words []string, pattern string) []string {
 }
 ```
 # Reference
-The LeetCode submission: [TypeScript](https://leetcode.com/problems/find-and-replace-pattern/submissions/1133020282/),  [Rust](https://leetcode.com/submissions/detail/1133316594/),  [Golang](leetcode.com/submissions/detail/1133315776/).
+The LeetCode submissions: [TypeScript](https://leetcode.com/problems/find-and-replace-pattern/submissions/1133020282/),  [Rust](https://leetcode.com/submissions/detail/1133316594/),  [Golang](leetcode.com/submissions/detail/1133315776/).
