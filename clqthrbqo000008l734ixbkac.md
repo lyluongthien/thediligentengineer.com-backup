@@ -4,7 +4,7 @@ datePublished: Sun Dec 31 2023 12:52:14 GMT+0000 (Coordinated Universal Time)
 cuid: clqthrbqo000008l734ixbkac
 slug: write-a-find-and-replace-pattern-leetcode-solution-that-beats-10000-of-users-with-typescript-54ms
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1704027081631/29b486d8-5aaa-4d78-ae60-3465846364cf.png
-tags: typescript, leetcode
+tags: go, typescript, rust, leetcode
 
 ---
 
