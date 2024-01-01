@@ -1,5 +1,5 @@
 ---
-title: "Write a find-and-replace-pattern LeetCode solution that beats 100.00% of users with TypeScript [54ms]"
+title: "Write an O(m*n) LeetCode solution of find-and-replace-pattern that beats 100.00% of users with TypeScript, Rust, and Golang [54ms]"
 datePublished: Sun Dec 31 2023 12:52:14 GMT+0000 (Coordinated Universal Time)
 cuid: clqthrbqo000008l734ixbkac
 slug: write-a-find-and-replace-pattern-leetcode-solution-that-beats-10000-of-users-with-typescript-54ms
@@ -55,7 +55,7 @@ end
 ```
 
 # Code
-
+## TypeScript
 ```typescript
 function findAndReplacePattern(words: string[], pattern: string): string[] {
   const result: string[] = [];
@@ -81,7 +81,6 @@ function findAndReplacePattern(words: string[], pattern: string): string[] {
     }).join('-')
   })
   const p = wordToId(pattern)
-//   console.log({ p })
   words.forEach(w => {
     if (w.length !== pattern.length) return
     const id = wordToId(w) 
@@ -92,8 +91,69 @@ function findAndReplacePattern(words: string[], pattern: string): string[] {
 
   return result
 };
-// console.log(findAndReplacePattern(words, pattern))
+```
+## Golang
+## Rust
+
+```rust
+use std::collections::HashMap;
+
+impl Solution {
+    pub fn find_and_replace_pattern(words: Vec<String>, pattern: String) -> Vec<String> {
+        let mut result = Vec::new();
+
+        fn hash_word(w: &str) -> String {
+            let mut char_to_id = HashMap::new();
+            let mut id = 0;
+            w.chars().map(|c| {
+                *char_to_id.entry(c).or_insert_with(|| { id += 1; id })
+            }).map(|id| id.to_string()).collect::<Vec<_>>().join("-")
+        }
+
+        let p = hash_word(&pattern);
+
+        for w in words.iter() {
+            if w.len() != pattern.len() {
+                continue;
+            }
+            if p == hash_word(w) {
+                result.push(w.clone());
+            }
+        }
+
+        result
+
+    }
+}
 ```
 
+```golang
+func findAndReplacePattern(words []string, pattern string) []string {
+    result := make([]string, 0)
+    hashWord := func(w string) string {
+        hMap := map[rune]int{}
+        id := 0
+        hashed := make([]string, 0, len(w))
+        for _, c := range w {
+            if _, ok := hMap[c]; !ok {
+                hMap[c] = id
+                id++
+            }
+            hashed = append(hashed, strconv.Itoa(hMap[c]))
+        }
+        return strings.Join(hashed, "-")
+    }
+    p := hashWord(pattern)
+    for _, w := range words {
+        if len(w) != len(pattern) {
+            continue
+        }
+        if p == hashWord(w) {
+            result = append(result, w)
+        }
+    }
+    return result
+}
+```
 # Reference
-The LeetCode submission: [leetcode.com/problems/find-and-replace-pattern/submissions/1133020282](https://leetcode.com/problems/find-and-replace-pattern/submissions/1133020282/)
+The LeetCode submission: [TypeScript](https://leetcode.com/problems/find-and-replace-pattern/submissions/1133020282/),  [Rust](https://leetcode.com/submissions/detail/1133316594/),  [Golang](leetcode.com/submissions/detail/1133315776/).
