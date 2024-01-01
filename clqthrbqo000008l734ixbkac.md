@@ -92,7 +92,6 @@ function findAndReplacePattern(words: string[], pattern: string): string[] {
   return result
 };
 ```
-## Golang
 ## Rust
 
 ```rust
@@ -126,6 +125,8 @@ impl Solution {
     }
 }
 ```
+
+## Golang
 
 ```golang
 func findAndReplacePattern(words []string, pattern string) []string {
