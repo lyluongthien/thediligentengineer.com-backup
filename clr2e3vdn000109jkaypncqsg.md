@@ -1,8 +1,8 @@
 ---
-title: "Résumé of Thien Ly (Kai)"
+title: "Résumé of Kai"
 datePublished: Sun Dec 01 2019 17:00:00 GMT+0000 (Coordinated Universal Time)
 cuid: clr2e3vdn000109jkaypncqsg
-slug: resume-of-thien-ly-kai
+slug: resume-of-kai
 
 ---
 
