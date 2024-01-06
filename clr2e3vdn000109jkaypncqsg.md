@@ -7,4 +7,4 @@ slug: resume-of-kai
 ---
 
 
-<iframe src="https://drive.google.com/file/d/1YCFd7qEZZ8S2adzA6GoZKb49jvY0_bTD/preview" width="700" height="1000" style="border:none;overflow:hidden;margin:auto;max-width:100%; min-height:70%" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"/>
+<iframe src="https://drive.google.com/file/d/1YCFd7qEZZ8S2adzA6GoZKb49jvY0_bTD/preview" width="700" height="1000" style="border:none;overflow:hidden;margin:auto;max-width:100%; max-height:70vh" scrolling="no" frameborder="0" allowfullscreen="true" allow="autoplay; clipboard-write; encrypted-media; picture-in-picture; web-share"/>
