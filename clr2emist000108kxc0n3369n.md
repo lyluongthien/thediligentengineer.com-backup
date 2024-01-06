@@ -1,5 +1,5 @@
 ---
-title: "Resume of Thien Ly"
+title: "Resume"
 datePublished: Sat Nov 30 2019 17:00:00 GMT+0000 (Coordinated Universal Time)
 cuid: clr2emist000108kxc0n3369n
 slug: resume
