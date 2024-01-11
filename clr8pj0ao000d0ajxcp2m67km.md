@@ -33,8 +33,10 @@ This works:
 pet.layEggs();
 ```
 But not this:
-```diff 
-+ pet.swim(); 
+```typescript 
+pet.swim(); 
+```
+```diff
 - >> Property 'swim' does not exist on type 'Bird | Fish'.
 - Property 'swim' does not exist on type 'Bird'.
 ```
