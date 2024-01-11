@@ -34,7 +34,7 @@ pet.layEggs();
 ```
 But not this:
 ```diff 
-pet.swim(); 
++ pet.swim(); 
 - >> Property 'swim' does not exist on type 'Bird | Fish'.
 - Property 'swim' does not exist on type 'Bird'.
 ```
