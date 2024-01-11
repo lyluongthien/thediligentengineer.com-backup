@@ -32,10 +32,8 @@ This works:
 pet.layEggs();
 ```
 But not this:
-```js 
+```md 
 pet.swim(); 
-```
-```md
 - >> Property 'swim' does not exist on type 'Bird | Fish'.
 - Property 'swim' does not exist on type 'Bird'.
 ```
