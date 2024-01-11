@@ -28,14 +28,14 @@ let pet = getSmallPet();
 
 ```
 This works:
-```typescript
+```js
 pet.layEggs();
 ```
 But not this:
-```typescript 
+```js 
 pet.swim(); 
 ```
-```diff
+```md
 - >> Property 'swim' does not exist on type 'Bird | Fish'.
 - Property 'swim' does not exist on type 'Bird'.
 ```
@@ -45,4 +45,4 @@ if(pet.name === 'fish'){
   pet.swim(); // this will work
 }
 ```
- See more on [typescriptlang.org/docs](https://www.typescriptlang.org/docs/handbook/unions-and-intersections.html#discriminating-unions) 
+ See more on [typescriptlang.org/docs](https://www.typescriptlang.org/docs/handbook/2/narrowing.html#discriminated-unions) 
