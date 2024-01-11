@@ -3,7 +3,6 @@ title: "A note on TypeScript discrimination unions"
 datePublished: Thu Jan 11 2024 04:26:15 GMT+0000 (Coordinated Universal Time)
 cuid: clr8pj0ao000d0ajxcp2m67km
 slug: a-note-on-typescript-discrimination-unions
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1704947907560/36a2cb34-6fdf-4801-bd8b-bd06d092a7aa.png
 tags: typescript
 
 ---
