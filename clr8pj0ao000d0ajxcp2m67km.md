@@ -32,10 +32,11 @@ This works:
 pet.layEggs();
 ```
 But not this:
-```md 
+```js
 pet.swim(); 
-- >> Property 'swim' does not exist on type 'Bird | Fish'.
-- Property 'swim' does not exist on type 'Bird'.
+// Errors in code:
+// Property 'swim' does not exist on type 'Bird | Fish'.
+//   Property 'swim' does not exist on type 'Bird'.
 ```
 This forces us to add additional checks to pass the compiler error:
 ```typescript
