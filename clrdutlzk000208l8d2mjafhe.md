@@ -3,7 +3,7 @@ title: "Manual Transaction Injection in KeystoneJS: A Workaround for Missing Tra
 datePublished: Sun Jan 14 2024 18:53:19 GMT+0000 (Coordinated Universal Time)
 cuid: clrdutlzk000208l8d2mjafhe
 slug: manual-transaction-injection-in-keystonejs-a-workaround-for-missing-transaction-support
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1705258347013/035e6848-b973-4e5f-b2af-283d0dc43016.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1705258445677/d0d3bb72-ba41-4c65-ac93-82aa2c41e2a9.png
 tags: typescript
 
 ---
