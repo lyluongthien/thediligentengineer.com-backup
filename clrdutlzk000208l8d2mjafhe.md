@@ -26,7 +26,7 @@ KeystoneJS's Lack of Native Transaction Support
 
 To address this issue, here's a solution that demonstrates manual transaction injection in KeystoneJS:
 
-### 1\. Defining the `PostgresTransaction` Interface:
+### 1\. Defining the `PostgresTransaction` Interface and unwrap default transaction with prisma middleware:
 
 ```ts
 export interface PostgresTransaction {
@@ -34,7 +34,13 @@ export interface PostgresTransaction {
   commit: () => Promise<void>;
   rollback: () => Promise<void>;
 }
+```
 
+```ts
+prisma.$use(async (params, next) => {
+    params.runInTransaction = false;
+    return next(params);
+  });
 ```
 
 
@@ -42,8 +48,6 @@ export interface PostgresTransaction {
 ### 2\. Creating a Transaction:
 
 ```ts
- 
-
 export const createPostgresTransaction = async (
   context: AuthenticatedContext | Context,
   name: string,
