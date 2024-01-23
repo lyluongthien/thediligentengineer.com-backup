@@ -14,7 +14,7 @@ Events are a common pattern in many applications, especially those that involve 
 
 However, managing events and listeners in Go can be tricky, especially when concurrency is involved. You need to ensure that your event channels are properly created, closed, and buffered, and that your listeners are registered and unregistered correctly. You also need to handle any errors or panics that may occur during the event processing.
 
-That's why we created the [`event`](https://pkg.go.dev/github.com/lltpkg/event) package, a simple and thread-safe mechanism for managing events and listeners in Go applications. The event package provides a high-level API that abstracts away the low-level details of creating and managing event channels and listeners. It also handles any errors or panics gracefully, ensuring that your application does not crash or leak resources.
+That's why we created the new [event](https://pkg.go.dev/github.com/lltpkg/event) package, a simple and thread-safe mechanism for managing events and listeners in Go applications. The event package provides a high-level API that abstracts away the low-level details of creating and managing event channels and listeners. It also handles any errors or panics gracefully, ensuring that your application does not crash or leak resources.
 
 ## Installation
 To use the event package in your Go project, you can use the following go get command:
@@ -83,6 +83,6 @@ The data can be any value that implements the `interface{}` type. The `FireEvent
 
 You can trigger events from anywhere in your code, as long as you import the event package. The `FireEvent` function is thread-safe and non-blocking, so you can use it in concurrent or asynchronous contexts.
 
-
+## Conclusion
 We hope that you find the event package useful and easy to use. If you have any feedback, suggestions, or issues, please feel free to open an issue or a pull request on the [GitHub repository](github.com/lltpkg/event). We appreciate any contributions that make the event package more robust and versatile.
  
