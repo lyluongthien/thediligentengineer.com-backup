@@ -84,5 +84,5 @@ The data can be any value that implements the `interface{}` type. The `FireEvent
 You can trigger events from anywhere in your code, as long as you import the event package. The `FireEvent` function is thread-safe and non-blocking, so you can use it in concurrent or asynchronous contexts.
 
 ## Conclusion
-We hope that you find the event package useful and easy to use. If you have any feedback, suggestions, or issues, please feel free to open an issue or a pull request on the [GitHub repository](github.com/lltpkg/event). We appreciate any contributions that make the event package more robust and versatile.
+We hope that you find the event package useful and easy to use. If you have any feedback, suggestions, or issues, please feel free to open an issue or a pull request on the [GitHub repository](https://github.com/lltpkg/event). We appreciate any contributions that make the event package more robust and versatile.
  
