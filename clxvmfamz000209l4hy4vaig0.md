@@ -27,7 +27,7 @@ Inbucket offers numerous benefits that make it an essential tool for modern deve
 * **Open Source:** Written in Go and Elm, Inbucket is open-source software released under the MIT License, allowing for extensive customization and community support.
     
 
-**Fun fact:**[***Supabase***](https://supabase.com/docs/guides/cli/testing-and-linting)***is using Inbucket for their local development CLI***
+**Fun fact:** [***Supabase***](https://supabase.com/docs/guides/cli/testing-and-linting) ***is using Inbucket for their local development CLI***
 
 **Presentation Highlights**
 
@@ -88,7 +88,7 @@ Links:
     
 * Inbucket Github: [https://github.com/inbucket](https://github.com/inbucket)
     
-* My Opensource Inbucket Client: [**github.com/**](http://github.com/groovetch/inbucket-gt-client)[**cute-me-on-repos**](https://www.npmjs.com/package/@cute-me-on-repos/inbucket-gt-client)[**/inbucket-gt-client**](http://github.com/groovetch/inbucket-gt-client)
+* My Opensource Inbucket Client: [**github.com/cute-me-on-repos/inbucket-gt-client**](http://github.com/cute-me-on-repos/inbucket-gt-client)
     
 * My NPM package: [**npmjs.com/package/@cute-me-on-repos/inbucket-gt-client**](https://www.npmjs.com/package/@cute-me-on-repos/inbucket-gt-client)
     
