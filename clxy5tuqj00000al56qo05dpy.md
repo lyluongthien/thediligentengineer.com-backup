@@ -1,8 +1,8 @@
 ---
-title: "Recap: Optimization and Fault Tolerance in Distributed Transactions with Node.js GraphQL Servers"
+title: "Recap: Optimization, Fault Tolerance and Distributed Transactions with Node.js GraphQL Servers"
 datePublished: Wed Jun 26 2024 17:00:00 GMT+0000 (Coordinated Universal Time)
 cuid: clxy5tuqj00000al56qo05dpy
-slug: recap-optimization-and-fault-tolerance-in-distributed-transactions-with-nodejs-graphql-servers
+slug: recap-optimization-fault-tolerance-and-distributed-transactions-with-nodejs-graphql-servers
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1719546362923/d82b6499-7c29-4920-b6a7-33874bced2af.png
 tags: presentations, nodejs, graphql, distributed-system, fault-tolerance, transactions
 
