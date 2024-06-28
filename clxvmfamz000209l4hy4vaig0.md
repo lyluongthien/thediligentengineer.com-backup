@@ -1,5 +1,5 @@
 ---
-title: "Recap: Inbucket Presentation"
+title: "Recap: Integrate Email Testing Service: Inbucket from Development to integration testing"
 datePublished: Wed Jun 26 2024 09:16:19 GMT+0000 (Coordinated Universal Time)
 cuid: clxvmfamz000209l4hy4vaig0
 slug: recap-inbucket-presentation
