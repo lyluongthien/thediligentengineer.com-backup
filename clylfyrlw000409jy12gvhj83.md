@@ -8,6 +8,8 @@ tags: promptengineering, prompting
 
 ---
 
+> After watching [Chloe's YouTube video](https://www.youtube.com/watch?v=_ILCCMbhCW4) on this topic, I decided to write this post as a write-up to take notes about what she shared and what makes me interested
+
 In today's fast-paced world, the ability to ask the right questions is becoming increasingly important, especially in leadership roles. As an engineer, understanding and applying the art of asking smarter questions can significantly impact our problem-solving abilities and strategic decision-making processes.
 
 ## The Shift from Answers to Questions
