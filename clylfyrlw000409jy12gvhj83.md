@@ -3,7 +3,8 @@ title: "The Art of Asking Smarter Questions"
 datePublished: Sun Jul 14 2024 10:57:31 GMT+0000 (Coordinated Universal Time)
 cuid: clylfyrlw000409jy12gvhj83
 slug: the-art-of-asking-smarter-questions
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1720955248273/05033c00-ea56-4860-af20-6b3cc7716ebd.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1720955921697/6b6b7990-b748-4747-ad0b-20b0bf273fbd.jpeg
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1720956000254/312e80a4-7b28-43d5-80ae-1d9271ea19dd.png
 tags: promptengineering, prompting
 
 ---
@@ -11,6 +12,8 @@ tags: promptengineering, prompting
 > After watching [Chloe's YouTube video](https://www.youtube.com/watch?v=_ILCCMbhCW4) on this topic, I decided to write this post as a write-up to take notes about what she shared and what makes me interested.
 
 In today's fast-paced world, the ability to ask the right questions is becoming increasingly important, especially in leadership roles. As an engineer, understanding and applying the art of asking smarter questions can significantly impact our problem-solving abilities and strategic decision-making processes.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720955946416/884684f0-c703-4281-bf1c-977272277cbb.jpeg align="center")
 
 ## The Shift from Answers to Questions
 
@@ -27,6 +30,8 @@ These questions, such as "What do we know?", help in identifying and clarifying 
 ### Speculative Questions
 
 Speculative questions, like "What if?", allow leaders to explore different scenarios and potential outcomes. When a team lacks motivation, asking "What if we organize a retreat?" versus "What if we replace the team members?" can lead to vastly different strategies with distinct implications for team morale and project success.
+
+![](https://cdn.hashnode.com/res/hashnode/image/upload/v1720955977054/9f1e0593-f1b5-4b7e-bb4e-4a1c454d65aa.png align="center")
 
 ### Productive Questions
 
