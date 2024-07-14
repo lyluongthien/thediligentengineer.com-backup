@@ -67,35 +67,3 @@ For more insights, you can look see the following references on this topic.
 * **NASA Metric Conversion Error**:
     
     * NASA's $125 million Mars Climate Orbiter was lost in 1999 due to a metric conversion error. Engineers at Lockheed Martin used imperial units instead of metric units, leading to the spacecraft's incorrect trajectory and subsequent destruction in the Martian atmosphere ([WSP](https://www.washingtonpost.com/wp-srv/national/longterm/space/stories/orbiter100199.htm#:~:text=NASA's%20Mars%20Climate%20Orbiter%20was,Martian%20surface%2C%20investigators%20said%20yesterday.)).
-        
-* **Vasa Warship Sinking**:
-    
-    * The Swedish warship Vasa sank on its maiden voyage in 1628 due to design flaws. It was top-heavy with insufficient ballast, causing it to capsize just minutes after setting sail (Vasa Museum) (History).
-        
-* **Hubble Space Telescope Flaw**:
-    
-    * The Hubble Space Telescope, launched in 1990, initially produced blurry images because of a flaw in its primary mirror. The issue was corrected in 1993 by a Space Shuttle mission that installed corrective optics ([NASA](https://www.nasa.gov/mission_pages/hubble/story/index.html)) (Space).
-        
-* **Hilton's Hong Kong Hotel Incident**:
-    
-    * In 1975, the newly opened Hilton Hotel in Hong Kong had to close temporarily due to a plumbing error. The hotel’s plumbing system was connected incorrectly, resulting in sewage backing up into the drinking water supply (Hilton Archives) (SCMP).
-        
-* **Ariane 5 Rocket Failure**:
-    
-    * In 1996, the European Space Agency's Ariane 5 rocket exploded shortly after launch due to a software error. A 64-bit number related to the rocket’s velocity was incorrectly converted to a 16-bit number, causing an overflow and subsequent failure (ESA) (BBC).
-        
-* **Berlin Brandenburg Airport Delays**:
-    
-    * The opening of Berlin Brandenburg Airport was delayed by nearly a decade due to a series of design and construction flaws. Issues included fire safety system failures, wiring problems, and poor planning (DW) ([The Guardian](https://www.theguardian.com/cities/2018/nov/15/the-strange-story-of-berlins-ber-airport-how-overspending-incompetence-and-catastrophe-delayed-its-opening)).
-        
-* **The Walkie-Talkie Building's Reflections**:
-    
-    * London's Walkie-Talkie skyscraper, completed in 2014, inadvertently focused sunlight onto the streets below, causing damage to parked cars and other objects. The building’s curved design acted as a concave mirror, leading to the problem ([BBC](https://www.bbc.com/news/uk-england-london-23930675)) ([The Guardian](https://www.theguardian.com/artanddesign/2013/sep/02/london-skyscraper-melts-car)).
-        
-* **Millennium Bridge Wobble**:
-    
-    * London’s Millennium Bridge, opened in 2000, experienced unexpected swaying due to pedestrian-induced vibrations. The bridge was closed for modifications to add dampers that stabilized its movement (BBC) ([The Guardian](https://www.theguardian.com/uk/2002/feb/22/hilaryclarke)).
-        
-* **Tacoma Narrows Bridge Collapse**:
-    
-    * The Tacoma Narrows Bridge, which opened in 1940, collapsed four months later due to an aeroelastic flutter caused by wind. The failure was a result of insufficient consideration of aerodynamic forces in the design (History) (ASCE).
