@@ -3,7 +3,7 @@ title: "The Art of Asking Smarter Questions"
 datePublished: Sun Jul 14 2024 10:57:31 GMT+0000 (Coordinated Universal Time)
 cuid: clylfyrlw000409jy12gvhj83
 slug: the-art-of-asking-smarter-questions
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1720955169578/58ece3ce-72b7-41cd-88c6-30bebf2440a1.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1720955248273/05033c00-ea56-4860-af20-6b3cc7716ebd.png
 tags: promptengineering, prompting
 
 ---
