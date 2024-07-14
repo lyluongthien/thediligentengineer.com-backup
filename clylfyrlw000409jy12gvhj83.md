@@ -44,18 +44,18 @@ To become more effective decision-makers, it is crucial to balance these types o
 
 In conclusion, mastering the art of asking smarter questions can transform how engineers lead and innovate. By focusing on the right questions, we can uncover deeper insights, develop more strategic solutions, and drive meaningful progress in our projects and organizations.
 
-For more insights, you can look see the folloing references on this topic.
+For more insights, you can look see the following references on this topic.
 
 ## References
 
-* [Chloe's YouTube video](https://www.youtube.com/watch?v=_ILCCMbhCW4) on this topic in Vietnamese.
+* [Chloe's YouTube video](https://www.youtube.com/watch?v=_ILCCMbhCW4) on this topic (in Vietnamese).
     
 * [The Art of Asking Smarter Questions, Harvard Business Review](https://hbr.org/2024/05/the-art-of-asking-smarter-questions)
     
 * **SNCF Train Dimensions Mistake**:
     
-    * French railway operator SNCF ordered new trains that were too wide for many regional platforms due to incorrect dimensions provided by RFF. The error, discovered after the order, resulted in a costly modification of platforms to accommodate the trains (Railway Technology, HuffPost UK)​ ([Railway Technology](https://www.railway-technology.com/news/newsfrances-sncf-orders-2000-new-trains-that-are-too-wide-4274382/))​​ ([HuffPost UK](https://www.huffingtonpost.co.uk/2014/05/21/trains-too-wide-for-platforms_n_5363781.html)).
+    * French railway operator SNCF ordered new trains that were too wide for many regional platforms due to incorrect dimensions provided by RFF. The error, discovered after the order, resulted in a costly modification of platforms to accommodate the trains ([Railway Technology](https://www.railway-technology.com/news/newsfrances-sncf-orders-2000-new-trains-that-are-too-wide-4274382/))​​ ([HuffPost UK](https://www.huffingtonpost.co.uk/2014/05/21/trains-too-wide-for-platforms_n_5363781.html)).
         
 * **NASA Metric Conversion Error**:
     
-    * NASA's $125 million Mars Climate Orbiter was lost in 1999 due to a metric conversion error. Engineers at Lockheed Martin used imperial units instead of metric units, leading to the spacecraft's incorrect trajectory and subsequent destruction in the Martian atmosphere (NASA, CNN)​ ([HuffPost UK](https://www.huffingtonpost.co.uk/2014/05/21/trains-too-wide-for-platforms_n_5363781.html)).
+    * NASA's $125 million Mars Climate Orbiter was lost in 1999 due to a metric conversion error. Engineers at Lockheed Martin used imperial units instead of metric units, leading to the spacecraft's incorrect trajectory and subsequent destruction in the Martian atmosphere ([WSP](https://www.washingtonpost.com/wp-srv/national/longterm/space/stories/orbiter100199.htm#:~:text=NASA's%20Mars%20Climate%20Orbiter%20was,Martian%20surface%2C%20investigators%20said%20yesterday.))​
