@@ -14,7 +14,7 @@ After switching to the backend and system architecture, I’ve always appreciate
 
 React’s context API is incredibly powerful for managing global state and passing props through the component tree without prop drilling. However, as applications grow, it’s easy to end up with a situation where multiple providers are nested inside each other, creating a callback hell of sorts in React. Here's a typical example:
 
-```tsx
+```jsx
 <AuthProvider>
   <ThemeProvider>
     <IntercomProvider>
@@ -34,13 +34,13 @@ While this setup works, it quickly becomes cumbersome and difficult to manage, e
 
 To address this issue, I created a utility named FlatedReact. This utility flattens the provider structure, making the code cleaner and easier to read. The core idea is to use a tuple where the first element is the React function component and the second is its props. Here’s the TypeScript type for it:
 
-```tsx
+```jsx
 type FlatedItem<T extends FC<any> = FC<any>> = [T] | [T, (Parameters<T>[0] & { children: undefined }) | undefined];
 ```
 
 I then created a helper function to facilitate creating these tuples:
 
-```tsx
+```jsx
 function makeFlatedItem<T extends (...args: any[]) => any>(
   component: T, 
   props: Omit<Parameters<T>[0], 'children'> | undefined = undefined
@@ -53,7 +53,7 @@ function makeFlatedItem<T extends (...args: any[]) => any>(
 
 The `Renderer` component is designed to take an array of these tuples and recursively render them. This effectively flattens the nested providers into a more readable structure:
 
-```tsx
+```jsx
 const Renderer = ({ components, children }: { components: FlatedItem[]; children?: ReactNode }) => {
   const renderProvider = (components: FlatedItem[], children: ReactNode): ReactElement => {
     const [tuple, ...restComponent] = components;
@@ -79,7 +79,7 @@ const FlatedReact = {
 
 The `FlatedReact.Load` function is not strictly necessary for the functionality but serves an important role for TypeScript type-checking of component props. Here’s how you can use FlatedReact to simplify your component structure:
 
-```tsx
+```jsx
 export default async function SomeLayoutComponent() {
   const session = await getServerSession(authOptions);
   const accessToken = await getServerAccessToken();
@@ -144,7 +144,7 @@ An important note is that FlatedReact is not limited to simplifying context prov
 
 To ensure FlatedReact works as expected, I’ve written tests using Jest and React Testing Library. These tests verify that FlatedReact correctly renders nested components and handles different scenarios, such as components with and without props.
 
-```tsx
+```jsx
 import { render } from "@testing-library/react";
 import FlatedReact from "../dist/cjs"; // Adjust the import based on your project structure
 
