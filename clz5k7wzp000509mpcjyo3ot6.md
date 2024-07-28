@@ -2,7 +2,7 @@
 title: "The React Hell"
 datePublished: Sun Jul 28 2024 12:52:00 GMT+0000 (Coordinated Universal Time)
 cuid: clz5k7wzp000509mpcjyo3ot6
-slug: the-react-hell
+slug: the-flated-reaction
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1722170824334/c587c98a-ee8f-4a58-8069-7bbd0c278a5d.png
 tags: reactjs, typescript, callback-hell, react-context-hell
 
