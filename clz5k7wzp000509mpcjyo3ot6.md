@@ -241,7 +241,7 @@ describe("FlatedReact", () => {
 
 * GitHub Repository:
     
-    > Explore the code and contribute to the FlatedReact project on GitHub: FlatedReact on GitHub.
+    > Explore the code and contribute to the FlatedReact project on GitHub: [FlatedReact on GitHub](https://github.com/cute-me-on-repos/flated-react).
     
 * NPM Package:
     
