@@ -156,7 +156,7 @@ MEMBER2GROUP(user:123) ∩ GROUP2GROUP(company:acme) ≠ ∅
 
 ---
 
-## **How it is Updated in** [***near\[Real-Time\]***](https://en.wikipedia.org/wiki/Real-time_computing)
+## **How it is Updated in** [***near\[Real-Time\]***](https://en.wikipedia.org/wiki/Real-time_computing#Near_real-time)
 
 ### **Incremental Indexing (No Painful Rebuilds!)**
 
