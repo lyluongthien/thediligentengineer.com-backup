@@ -4,7 +4,7 @@ datePublished: Mon Mar 17 2025 15:52:07 GMT+0000 (Coordinated Universal Time)
 cuid: cm8d8t6c900040aleeb4iheth
 slug: leopard-the-c-of-o1-indexing-system
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1742225003521/599f58f2-483b-451c-bbae-6611954831de.webp
-ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1742226571365/f4628271-14d2-47e1-899c-db98fd683e11.jpeg
+ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1742226985732/6d71f0ae-bd2b-429d-829d-a4442ea2f713.png
 tags: optimization, databases, architecture, indexing, zanzibar, leopard, gau
 
 ---
