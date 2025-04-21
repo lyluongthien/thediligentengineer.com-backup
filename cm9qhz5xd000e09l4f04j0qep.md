@@ -86,9 +86,30 @@ Redlock resembles a two‑phase commit in that it performs a prepare phase (acqu
 
 Operators should deploy an odd number of independent Redis masters with synchronized clocks to minimize TTL drift. Clients should handle lock acquisition failures gracefully by implementing retry logic with exponential backoff to avoid thundering herd problems.
 
-## Implementation Example
+## Implementations
+According to [redis](https://redis.io/docs/latest/develop/use/patterns/distributed-locks/):
 
-In Node.js, the `redlock` npm package can be used to encapsulate the algorithm, providing simple `lock` and `unlock` methods. Developers configure the Redlock instance with an array of Redis clients, set retry parameters, and then call `lock(resource, ttl)` to acquire locks safely.
+-   [Redlock-rb](https://github.com/antirez/redlock-rb) (Ruby implementation). There is also a [fork of Redlock-rb](https://github.com/leandromoreira/redlock-rb) that adds a gem for easy distribution.
+-   [RedisQueuedLocks](https://github.com/0exp/redis_queued_locks) (Ruby implementation).
+-   [Redlock-py](https://github.com/SPSCommerce/redlock-py) (Python implementation).
+-   [Pottery](https://github.com/brainix/pottery#redlock) (Python implementation).
+-   [Aioredlock](https://github.com/joanvila/aioredlock) (Asyncio Python implementation).
+-   [RedisMutex](https://github.com/malkusch/lock#redismutex) (PHP implementation with both [Redis extension](https://github.com/phpredis/phpredis) and [Predis library](https://github.com/predis/predis) clients support).
+-   [Redlock-php](https://github.com/ronnylt/redlock-php) (PHP implementation).
+-   [cheprasov/php-redis-lock](https://github.com/cheprasov/php-redis-lock) (PHP library for locks).
+-   [rtckit/react-redlock](https://github.com/rtckit/reactphp-redlock) (Async PHP implementation).
+-   [Redsync](https://github.com/go-redsync/redsync) (Go implementation).
+-   [Redisson](https://github.com/mrniko/redisson) (Java implementation).
+-   [Redis::DistLock](https://github.com/sbertrang/redis-distlock) (Perl implementation).
+-   [Redlock-cpp](https://github.com/jacket-code/redlock-cpp) (C++ implementation).
+-   [Redis-plus-plus](https://github.com/sewenew/redis-plus-plus/#redlock) (C++ implementation).
+-   [Redlock-cs](https://github.com/kidfashion/redlock-cs) (C#/.NET implementation).
+-   [RedLock.net](https://github.com/samcook/RedLock.net) (C#/.NET implementation). Includes async and lock extension support.
+-   [ScarletLock](https://github.com/psibernetic/scarletlock) (C# .NET implementation with configurable datastore).
+-   [Redlock4Net](https://github.com/LiZhenNet/Redlock4Net) (C# .NET implementation).
+-   [node-redlock](https://github.com/mike-marcacci/node-redlock) (NodeJS implementation). Includes support for lock extension.
+-   [Deno DLM](https://github.com/oslabs-beta/Deno-Redlock) (Deno implementation)
+-   [Rslock](https://github.com/hexcowboy/rslock) (Rust implementation). Includes async and lock extension support.
 
 ## Conclusion
 
