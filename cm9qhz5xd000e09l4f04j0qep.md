@@ -97,11 +97,5 @@ Redlock remains a valuable tool for distributed locking in Redis when used with 
 ## References
 
 1. [Distributed Locks with Redis | Redis Docs](https://redis.io/docs/latest/develop/use/patterns/distributed-locks/)  
-2. [Redis Lock – Redlock Algorithm | Redis Glossary](https://redis.io/glossary/redis-lock/)  
-3. [Explain Redlock in Depth – DEV Community](https://dev.to/lazypro/explain-redlock-in-depth-31jj)  
-4. [How to Do Distributed Locking – Martin Kleppmann](https://martin.kleppmann.com/2016/02/08/how-to-do-distributed-locking.html)  
-5. [Implementing Distributed Locks with Redis: A Practical Guide](https://codedamn.com/news/backend/distributed-locks-with-redis)  
-6. [Achieving Distributed Locking in Node.js with Redis and Redlock – Medium](https://medium.com/@ayushnandanwar003/achieving-distributed-locking-in-node-js-with-redis-and-redlock-0574f5ac333d)  
-7. [glasslion/redlock – GitHub](https://github.com/glasslion/redlock)  
-8. [10 Types of Locks with Redis: Pros and Cons – ThinhDA](https://thinhdanggroup.github.io/10-redis-locks/)  
-9. [Distributed lock manager – Wikipedia](https://en.wikipedia.org/wiki/Distributed_lock_manager)  
+2. [Redis Lock – Redlock Algorithm | Redis Glossary](https://redis.io/glossary/redis-lock/) 
+3. [Distributed lock manager – Wikipedia](https://en.wikipedia.org/wiki/Distributed_lock_manager)  
