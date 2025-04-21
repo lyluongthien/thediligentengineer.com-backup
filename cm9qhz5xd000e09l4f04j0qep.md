@@ -72,6 +72,13 @@ sequenceDiagram
 
 Redlock resembles a two‑phase commit in that it performs a prepare phase (acquiring locks) followed by a commit or abort (keeping or releasing locks) based on quorum success. Unlike traditional 2PC, Redlock does not rely on a central coordinator and can tolerate some instance failures without blocking the system.
 
+|   | Redlock | 2PC |
+| --- | --- | --- |
+| **Quorum vs All-or-Nothing** | Redlock tolerates partial failure (just needs majority) | 2PC requires full agreement |
+| **Coordinator role** | No formal coordinator; the client drives the logic | Central coordinator (e.g., transaction manager) |
+| **Durability guarantees** | Redis isn't strongly consistent | 2PC assumes stronger consistency and logging |
+| **Failure tolerance** | More optimistic, faster (but less safe in edge cases) | More rigid but safer in distributed systems |
+
 ## Pros and Cons
 
 **Pros**  
