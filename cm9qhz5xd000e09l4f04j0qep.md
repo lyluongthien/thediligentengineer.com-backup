@@ -68,7 +68,7 @@ sequenceDiagram
 
 ```
 
-## It seems like with Two‑Phase Commit?
+## It seems like Two‑Phase Commit?
 
 Redlock resembles a two‑phase commit in that it performs a prepare phase (acquiring locks) followed by a commit or abort (keeping or releasing locks) based on quorum success. Unlike traditional 2PC, Redlock does not rely on a central coordinator and can tolerate some instance failures without blocking the system.
 
