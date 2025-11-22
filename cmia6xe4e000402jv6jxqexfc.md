@@ -1,10 +1,9 @@
 ---
 title: "The Cloudf|are Outage [mDraft]"
-datePublished: Sat Nov 22 2025 11:13:09 GMT+0000 (Coordinated Universal Time)
+datePublished: Fri Nov 21 2025 17:00:00 GMT+0000 (Coordinated Universal Time)
 cuid: cmia6xe4e000402jv6jxqexfc
 slug: the-cloudfare-outage-mdraft
-cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1763809347069/7b9bc9c9-06d6-4c68-ba84-a66a44a9d27c.png
-ogImage: https://cdn.hashnode.com/res/hashnode/image/upload/v1763809969461/6a7aaa30-a6ac-469d-9168-06d23f8922fe.png
+cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1763810102707/975d1f51-2e4e-451a-87c5-1e1fa547a7c5.png
 tags: memes
 
 ---
