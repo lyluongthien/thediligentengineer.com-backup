@@ -1,6 +1,6 @@
 ---
 title: "Recap: Integrate Email Testing Service: Inbucket from Development to integration testing"
-datePublished: Wed Jun 26 2024 09:16:19 GMT+0000 (Coordinated Universal Time)
+datePublished: 2024-06-26T09:16:19.739Z
 cuid: clxvmfamz000209l4hy4vaig0
 slug: recap-inbucket-presentation
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1719393096343/7cfcd278-2660-4090-88cf-14779e6599af.png
