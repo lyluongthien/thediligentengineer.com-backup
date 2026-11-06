@@ -1,7 +1,7 @@
 ---
 title: "The Art of Asking Smarter Questions"
 seoDescription: "As an engineer, understanding and applying the art of asking smarter questions can significantly impact our problem-solving abilities and strategic decision"
-datePublished: Sun Jul 14 2024 10:57:31 GMT+0000 (Coordinated Universal Time)
+datePublished: 2024-07-14T10:57:31.460Z
 cuid: clylfyrlw000409jy12gvhj83
 slug: the-art-of-asking-smarter-questions
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1720955921697/6b6b7990-b748-4747-ad0b-20b0bf273fbd.jpeg
