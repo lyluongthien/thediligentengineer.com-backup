@@ -1,6 +1,6 @@
 ---
 title: "Most Asked Questions During My Job Searching Journey"
-datePublished: Tue Nov 19 2024 06:16:11 GMT+0000 (Coordinated Universal Time)
+datePublished: 2024-11-19T06:16:11.225Z
 cuid: cm3o2a02h001v09l2g8bthspg
 slug: most-asked-questions-during-my-job-searching-journey
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/cckf4TsHAuw/upload/7bb4876b4d5bd46486624902e22d5433.jpeg
