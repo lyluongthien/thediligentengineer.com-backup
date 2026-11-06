@@ -1,6 +1,6 @@
 ---
 title: "The Redlock Algorithm"
-datePublished: Mon Apr 21 2025 03:09:25 GMT+0000 (Coordinated Universal Time)
+datePublished: 2025-04-21T03:09:25.825Z
 cuid: cm9qhz5xd000e09l4f04j0qep
 slug: the-redlock-algorithm
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/xyh8P8k-X90/upload/1673ecdf9bd860cf10cd97eb087c8bbe.jpeg
