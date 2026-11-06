@@ -1,6 +1,6 @@
 ---
 title: "Effect?"
-datePublished: Sun Apr 13 2025 17:36:10 GMT+0000 (Coordinated Universal Time)
+datePublished: 2025-04-13T17:36:10.643Z
 cuid: cm9fxezrn000408i57j8u9rsn
 slug: effect
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1744565711405/b01a9258-ac62-4c45-b84b-e2d9444449df.jpeg
