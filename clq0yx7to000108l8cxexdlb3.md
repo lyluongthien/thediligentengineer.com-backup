@@ -1,6 +1,6 @@
 ---
 title: "A glance at the Rust SWC [slideshare]"
-datePublished: Wed Sep 07 2022 17:00:00 GMT+0000 (Coordinated Universal Time)
+datePublished: 2022-09-07T17:00:00.000Z
 cuid: clq0yx7to000108l8cxexdlb3
 slug: a-glance-at-the-rust-swc-re-up
 canonical: https://www.slideshare.net/LyLuongThien/a-glance-at-the-rust-swc
