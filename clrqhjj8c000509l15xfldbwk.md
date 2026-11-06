@@ -1,6 +1,6 @@
 ---
 title: "Introduction to the new thread-safe event package for Golang"
-datePublished: Tue Jan 23 2024 15:02:34 GMT+0000 (Coordinated Universal Time)
+datePublished: 2024-01-23T15:02:34.524Z
 cuid: clrqhjj8c000509l15xfldbwk
 slug: introduction-to-the-new-thread-safe-event-package-for-golang
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1706022099050/151b1551-d2d7-48f5-a9ba-fa2ee54a2436.png
