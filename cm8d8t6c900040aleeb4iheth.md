@@ -1,6 +1,6 @@
 ---
 title: "Leopard - the c⁽¹⁾ of O(1) Indexing System"
-datePublished: Mon Mar 17 2025 15:52:07 GMT+0000 (Coordinated Universal Time)
+datePublished: 2025-03-17T15:52:07.257Z
 cuid: cm8d8t6c900040aleeb4iheth
 slug: leopard-the-c-of-o1-indexing-system
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1742225003521/599f58f2-483b-451c-bbae-6611954831de.webp
