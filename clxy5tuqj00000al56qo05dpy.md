@@ -1,6 +1,6 @@
 ---
 title: "Recap: Optimization, Fault Tolerance and Distributed Transactions with Node.js GraphQL Servers"
-datePublished: Wed Jun 26 2024 17:00:00 GMT+0000 (Coordinated Universal Time)
+datePublished: 2024-06-26T17:00:00.000Z
 cuid: clxy5tuqj00000al56qo05dpy
 slug: recap-optimization-fault-tolerance-and-distributed-transactions-with-nodejs-graphql-servers
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1719546362923/d82b6499-7c29-4920-b6a7-33874bced2af.png
