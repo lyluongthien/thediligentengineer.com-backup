@@ -1,6 +1,6 @@
 ---
 title: "A note on TypeScript discrimination unions"
-datePublished: Thu Jan 11 2024 04:26:15 GMT+0000 (Coordinated Universal Time)
+datePublished: 2024-01-11T04:26:15.744Z
 cuid: clr8pj0ao000d0ajxcp2m67km
 slug: a-note-on-typescript-discrimination-unions
 tags: typescript
