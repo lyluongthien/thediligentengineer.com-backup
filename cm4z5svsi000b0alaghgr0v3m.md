@@ -1,6 +1,6 @@
 ---
 title: "Do You Use Mutex in Node.js Servers?"
-datePublished: Sun Dec 22 2024 05:20:01 GMT+0000 (Coordinated Universal Time)
+datePublished: 2024-12-22T05:20:01.266Z
 cuid: cm4z5svsi000b0alaghgr0v3m
 slug: do-you-use-mutex-in-nodejs-servers
 cover: https://cdn.hashnode.com/res/hashnode/image/stock/unsplash/RVmk2WsWsjg/upload/84daa0581328da9ee525321363fa45e6.jpeg
