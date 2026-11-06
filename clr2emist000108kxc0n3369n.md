@@ -1,6 +1,6 @@
 ---
 title: "Resume"
-datePublished: Sat Nov 30 2019 17:00:00 GMT+0000 (Coordinated Universal Time)
+datePublished: 2019-11-30T17:00:00.000Z
 cuid: clr2emist000108kxc0n3369n
 slug: resume
 
