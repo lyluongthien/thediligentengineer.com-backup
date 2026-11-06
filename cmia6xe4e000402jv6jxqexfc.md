@@ -1,6 +1,6 @@
 ---
 title: "The Cloudf|are Outage [mDraft]"
-datePublished: Fri Nov 21 2025 17:00:00 GMT+0000 (Coordinated Universal Time)
+datePublished: 2025-11-21T17:00:00.000Z
 cuid: cmia6xe4e000402jv6jxqexfc
 slug: the-cloudfare-outage-mdraft
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1763810102707/975d1f51-2e4e-451a-87c5-1e1fa547a7c5.png
