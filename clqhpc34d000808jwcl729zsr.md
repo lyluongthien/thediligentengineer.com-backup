@@ -1,6 +1,6 @@
 ---
 title: "Streaming Large Files over TCP"
-datePublished: Sat Dec 23 2023 06:51:06 GMT+0000 (Coordinated Universal Time)
+datePublished: 2023-12-23T06:51:06.061Z
 cuid: clqhpc34d000808jwcl729zsr
 slug: streaming-large-files-over-tcp
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1703325065078/8ca7ff0f-ef1d-4f4b-81c4-2213b7a5473f.jpeg
