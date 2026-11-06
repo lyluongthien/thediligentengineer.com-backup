@@ -1,6 +1,6 @@
 ---
 title: "Inlining in Go"
-datePublished: Sun Dec 31 2023 10:42:13 GMT+0000 (Coordinated Universal Time)
+datePublished: 2023-12-31T10:42:13.821Z
 cuid: clqtd44vx000808jxc56y5apo
 slug: inlining-in-go
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1704019280035/4a0bf6cf-52a0-42e2-85e7-03d8be72a658.jpeg
