@@ -1,6 +1,6 @@
 ---
 title: "Building a Lightweight HTTP Client in Bash: `exec 3<>/dev/tcp/"$host"/80`"
-datePublished: Tue Aug 20 2024 04:03:06 GMT+0000 (Coordinated Universal Time)
+datePublished: 2024-08-20T04:03:06.030Z
 cuid: cm01wgbzi00050alc23k57ml2
 slug: building-a-lightweight-http-client-in-bash-exec-3devtcphost80
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1724126535066/038fea24-3962-4c2d-bb5e-d4abfa6698d0.png
