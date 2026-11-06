@@ -1,6 +1,6 @@
 ---
 title: "Write an O(m*n) LeetCode solution of find-and-replace-pattern that beats 100.00% of users with TypeScript [54ms]"
-datePublished: Sun Dec 31 2023 12:52:14 GMT+0000 (Coordinated Universal Time)
+datePublished: 2023-12-31T12:52:14.256Z
 cuid: clqthrbqo000008l734ixbkac
 slug: write-a-find-and-replace-pattern-leetcode-solution-that-beats-10000-of-users-with-typescript-54ms
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1704027081631/29b486d8-5aaa-4d78-ae60-3465846364cf.png
