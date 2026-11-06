@@ -1,6 +1,6 @@
 ---
 title: "Writing SQL in Big Data System"
-datePublished: Wed Apr 16 2025 04:04:34 GMT+0000 (Coordinated Universal Time)
+datePublished: 2025-04-16T04:04:34.722Z
 cuid: cm9jeqtr6000j0ajs83wu4ni2
 slug: writing-sql-in-big-data-system
 tags: big-data, sql
