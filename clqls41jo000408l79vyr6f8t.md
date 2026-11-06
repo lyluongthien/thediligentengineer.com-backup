@@ -1,6 +1,6 @@
 ---
 title: "PostgreSQL-to-Elasticsearch synchronization: Logstash with JDBC input plugin Vs. PGSync"
-datePublished: Tue Dec 26 2023 03:19:54 GMT+0000 (Coordinated Universal Time)
+datePublished: 2023-12-26T03:19:54.324Z
 cuid: clqls41jo000408l79vyr6f8t
 slug: postgresql-to-elasticsearch-synchronization-logstash-with-jdbc-input-plugin-vs-pgsync
 cover: https://cdn.hashnode.com/res/hashnode/image/upload/v1703560751956/2cdb74b5-aa0c-42d6-8016-6c6a0eb4acfc.jpeg
