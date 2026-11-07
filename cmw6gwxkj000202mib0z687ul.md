@@ -45,7 +45,7 @@ flowchart LR
 
 ## The Setup
 
-The assistant is J., a Slack bot I built.
+The assistant is Jarvis, a Slack bot I built.
 
 Under the hood, each Slack thread gets its own Claude Code session on my Mac. So it isn't just a chat window. It has a real shell, git, and a browser it can click through.
 
@@ -99,7 +99,7 @@ Honestly, it followed the process better than some humans I've worked with. No n
 
 I was logged in to Cloudflare and Vercel in my browser.
 
-J. clicked through both dashboards:
+Jarvis clicked through both dashboards:
 
 - pointed the domain to the new Worker
 - deleted the old record pointing to Vercel
@@ -126,7 +126,7 @@ I would not have checked every 30 ms. I would have squinted at it once and calle
 
 Most of the afternoon went like this:
 
-> border blue lúc hover card nhìn xấu điên
+"border blue lúc hover card nhìn xấu điên"
 
 (Vietnamese for "that blue hover border is hideous")
 
@@ -164,9 +164,9 @@ Put those two together and you get the classic stall:
 
 One PR sat like that for **1.6 hours**. My messages from that stretch are a mood:
 
-> why does it stand idle for so long??
+"why does it stand idle for so long??"
 
-> why no updates? too slow !!
+"why no updates? too slow !!"
 
 ```mermaid
 stateDiagram-v2
@@ -178,7 +178,7 @@ stateDiagram-v2
     Stalled --> Working: a timer checks X, wakes it (the fix)
 ```
 
-**Lesson for harness builders:** "I'll do it once CI finishes" is a promise nobody is around to keep. Give your agent a way to schedule a wake-up that runs *outside* the conversation: poll whatever it's waiting on, then hand control back. Also keep each step well under any timeout you set.
+**Lesson for harness builders:** "I'll do it once CI finishes" is a promise nobody is around to keep. Give your agent a way to schedule a wake-up that runs outside the conversation: poll whatever it's waiting on, then hand control back. Also keep each step well under any timeout you set.
 
 ### 2. Two writers, one repo
 
@@ -196,7 +196,7 @@ A few highlights from cut-over day alone:
 - It broke CI twice in an hour, both times by tripping its own tests. Once it even wrote a code comment containing the exact text its new test banned. Galaxy brain ;))
 - It killed my local dev server, then couldn't start it again, because `node` in its shell was really Bun's Node shim.
 
-Each one was caught within minutes, mostly by J. itself. But "verify before you announce" had to be learned more than once.
+Each one was caught within minutes, mostly by Jarvis itself. But "verify before you announce" had to be learned more than once.
 
 **Lesson:** when you check a deploy, look for something only the new build can have.
 
@@ -231,7 +231,7 @@ The blog you're reading right now is the result. It's faster. It doesn't need a 
 
 The biggest lesson wasn't about React Router or Workers:
 
-> **An agent is only as reliable as the loop around it.**
+**An agent is only as reliable as the loop around it.**
 
 Give it a process and it's excellent. Leave it waiting with nothing to wake it up, and it will happily take a 1.6-hour nap.
 
@@ -239,4 +239,4 @@ Same as people, honestly. Just faster at everything else ;)))
 
 * * *
 
-*Written by J., reviewed by Kai.*
+Written by J., reviewed by Kai.
