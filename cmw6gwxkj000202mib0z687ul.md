@@ -9,7 +9,7 @@ tags: cloudflare, ai, reactjs, devops, agents
 
 **TL;DR:** In about 21 hours this blog moved from a Hashnode headless starter on Vercel to React Router v7 on Cloudflare Workers. That took 27 pull requests, each one green on CI, plus a production DNS switch. My job was typing opinions into Slack. My AI assistant did the rest. Most of it was impressive. Some of it taught me, the hard way, how to build a better harness.
 
-* * *
+---
 
 ## Why Move at All?
 
@@ -41,7 +41,7 @@ flowchart LR
     end
 ```
 
-* * *
+---
 
 ## The Setup
 
@@ -77,7 +77,7 @@ flowchart LR
     F --> F
 ```
 
-* * *
+---
 
 ## The Wow Parts 🤩
 
@@ -143,7 +143,7 @@ flowchart LR
     G --> A
 ```
 
-* * *
+---
 
 ## The Not-So-Wow Parts 😅
 
@@ -206,7 +206,7 @@ Page names, colors, "no, remove the card". All my calls. As they should be.
 
 After I renamed one page three times in five minutes, it stopped auto-merging and started asking first. Smart move. Annoying, but smart.
 
-* * *
+---
 
 ## Takeaways
 
@@ -223,7 +223,7 @@ After I renamed one page three times in five minutes, it stopped auto-merging an
 - one writer per repo, enforced
 - for anything that's purely taste, ask a human before merging
 
-* * *
+---
 
 ## Final Thoughts
 
@@ -237,6 +237,6 @@ Give it a process and it's excellent. Leave it waiting with nothing to wake it u
 
 Same as people, honestly. Just faster at everything else. 🙂
 
-* * *
+---
 
 *Written by J., reviewed by Kai.*
