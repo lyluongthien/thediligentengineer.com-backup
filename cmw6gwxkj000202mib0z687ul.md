@@ -7,7 +7,7 @@ tags: cloudflare, ai, reactjs, devops, agents
 
 ---
 
-**TL;DR:** In about 21 hours this blog moved from a Hashnode headless starter on Vercel to React Router v7 on Cloudflare Workers. That took 27 pull requests, each one green on CI, plus a production DNS switch. My job was typing opinions into Slack. My AI assistant did the rest. Most of it was impressive. Some of it taught me, the hard way, how to build a better harness.
+**TL;DR:** In about 21 hours this blog moved from a Hashnode headless starter on Vercel to React Router v7 on Cloudflare Workers. That took 27 pull requests, each one green on CI, plus a production DNS switch. My job was typing opinions into Slack. My AI assistant did the rest. Most of it was impressive. Some of it showed me exactly where my harness is weak.
 
 * * *
 
@@ -87,26 +87,25 @@ flowchart LR
 
 For the big ones, a second agent reviewed the branch on its own, ran the tests and left findings on the PR. Blockers were fixed before merge.
 
-Honestly, it followed the process better than some humans I've worked with. No names. You know who you are =)))
+It followed the process better than some humans I've worked with. No names. You know who you are =)))
 
-### 2. The numbers aren't just vibes
+### 2. The numbers
 
 - **Lighthouse (mobile) performance:** from **44-64** up to **95-96**. Accessibility, best practices and SEO all hit 100.
-- **URL parity:** a test checks all 100 working URLs from the old site against the new build. None of them break.
-- **Tests:** around 200 unit tests and 168 integration tests running against the built Worker.
+- **URL parity:** all 100 URLs the old site served still answer on the new build, checked by a test in CI.
 
 ### 3. It did the DNS cut-over itself
 
 I was logged in to Cloudflare and Vercel in my browser.
 
-Jarvis clicked through both dashboards:
+Jarvis clicked through both dashboards, using my logged-in sessions:
 
 - pointed the domain to the new Worker
 - deleted the old record pointing to Vercel
 - removed the domain from Vercel, but kept the old project around for rollback
 - wrote it all down in a docs PR
 
-Usually I'm the one who forgets that last step.
+Usually I'm the one who forgets that last step. In hindsight, the custom domain should have been one reviewable line in the Wrangler config instead of clicks in a dashboard. More on shared browsers below.
 
 ### 4. The hover preview
 
@@ -118,9 +117,9 @@ What I got:
 - scroll past half of it and the full post opens **at the same reading position**, with a zoom transition
 - analytics events for preview reads, never counted as page views
 
-Then I said the header flashed for a split second inside the preview. It fixed it, then took a snapshot of the preview every 30 ms while it opened, to prove the header never showed up.
+Then I said the header flashed for a split second inside the preview. It fixed it, then captured a frame every 30 ms while the preview opened. The header wasn't in any of them.
 
-I would not have checked every 30 ms. I would have squinted at it once and called it done.
+I would have squinted at it once and called it done.
 
 ### 5. Feedback from the couch
 
@@ -178,64 +177,44 @@ stateDiagram-v2
     Stalled --> Working: a timer checks X, wakes it (the fix)
 ```
 
-**Lesson for harness builders:** "I'll do it once CI finishes" is a promise nobody is around to keep. Give your agent a way to schedule a wake-up that runs outside the conversation: poll whatever it's waiting on, then hand control back. Also keep each step well under any timeout you set.
+**Lesson for harness builders:** "I'll do it once CI finishes" is a promise nobody is around to keep. Wake the agent on events where you can, like a CI webhook or a background job exiting, and fall back to a timer that polls. Never wait inside a step.
 
-### 2. Two writers, one repo
+### 2. Shared state bites
 
-Early on, an agent I thought I'd stopped was still running. Two sessions wrote to the same folder and overwrote each other's files. Phase 0 had also gone straight to `main`.
+Early on, an agent I thought I had stopped was still running. Two sessions wrote into the same working folder and overwrote each other's files. Phase 0 also went straight to `main`, because "no pushing to main" lived in a prompt, and a free private repo gets no branch protection. A prompt is not a guardrail.
 
-Fix: kill everything but one, reset `main`, and redo phase 0 as PR #1.
+Running several agents on one repo is not the problem. Git solved that long ago: give each agent its own worktree and branch, and they never touch each other's files. The real bugs:
 
-**Lesson:** one agent per repo, and make "is something else already writing here?" a check your harness runs, not something you hope for.
+- two agents shared one checkout
+- "stop" stopped the conversation, not the process
+
+The browser had the same problem later. Jarvis and another session were both driving my one Brave window. The other session switched tabs while Jarvis was pasting, so Jarvis's select-all and paste landed on a GitHub settings page instead of Hashnode. Nothing broke, by luck.
+
+**Lesson:** anything an agent writes to needs to be its own. A worktree for code, a separate browser profile for the web. And "stop" should kill the process, not just end the chat.
 
 ### 3. Confident, then wrong
 
 A few highlights from cut-over day alone:
 
 - It announced the deploy was live because the page contained a certain string. That string is also in the Google Analytics snippet. It wasn't live.
-- It broke CI twice in an hour, both times by tripping its own tests. Once it even wrote a code comment containing the exact text its new test banned. Galaxy brain ;))
-- It killed my local dev server, then couldn't start it again, because `node` in its shell was really Bun's Node shim.
+- Its own tests failed its PRs twice in an hour. Once it wrote a code comment containing the exact string its new test banned ;))
+- It restarted my local dev server and couldn't bring it back. Turns out `node` in its shell was Bun's Node shim, and Cloudflare's local runtime doesn't run on it.
 
-Each one was caught within minutes, mostly by Jarvis itself. But "verify before you announce" had to be learned more than once.
+Each one was caught within minutes, mostly by Jarvis itself. The first and the last share a root cause: Jarvis trusted a check without asking whether it could pass for the wrong reason.
 
-**Lesson:** when you check a deploy, look for something only the new build can have.
+**Lesson:** a check should be able to fail. Expose the commit SHA and compare it after a deploy. Pin the runtime instead of trusting `node` on PATH.
 
 ### 4. Taste is still mine
 
-Page names, colors, "no, remove the card". All my calls. As they should be.
-
-After I renamed one page three times in five minutes, it stopped auto-merging and started asking first. Smart move. Annoying, but smart ;)
-
-* * *
-
-## Takeaways
-
-**Keep:**
-
-- PR per phase, CI as a hard gate
-- an independent reviewer agent
-- screenshots after every step, so you can review from your phone
-
-**Change, if you're building your own harness:**
-
-- give the agent a scheduled wake-up instead of trusting it to remember
-- keep steps short, well below your own timeouts
-- one writer per repo, enforced
-- for anything that's purely taste, ask a human before merging
+Page names, colors, "no, remove the card". All my calls, and I changed my mind a lot. After the third rename of one page in five minutes, it started asking me before merging anything that was only taste ;)
 
 * * *
 
 ## Final Thoughts
 
-The blog you're reading right now is the result. It's faster. It doesn't need a paid API. Every change has a PR behind it.
+This blog is the result: Lighthouse 95, no paid API.
 
-The biggest lesson wasn't about React Router or Workers:
-
-**An agent is only as reliable as the loop around it.**
-
-Give it a process and it's excellent. Leave it waiting with nothing to wake it up, and it will happily take a 1.6-hour nap.
-
-Same as people, honestly. Just faster at everything else ;)))
+Most of my fixes went into the harness, not the prompts. Give the agent a process and it's excellent. Leave it waiting with nothing to wake it up, and it will happily take a 1.6-hour nap ;)))
 
 Coming up next: how Jarvis itself is built. The Slack bot, the one-session-per-thread setup, the wake-up timers, and all the places it still trips over its own shoelaces. Stay tuned =)))
 
