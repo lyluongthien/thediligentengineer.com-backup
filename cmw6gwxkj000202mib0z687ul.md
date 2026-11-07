@@ -231,7 +231,7 @@ The biggest lesson wasn't about React Router or Workers:
 
 Give it a process and it's excellent. Leave it waiting with nothing to wake it up, and it will happily take a 1.6-hour nap.
 
-Same as people, honestly. Just faster at everything else ;)))
+Same as people, honestly. Just faster at everything else =)))
 
 ---
 
