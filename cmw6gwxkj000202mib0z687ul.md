@@ -57,6 +57,12 @@ I gave it the job from my phone, then set a few rules:
 
 3. **Keep the architecture light.** A small domain layer, yes. Enterprise layers on top of React Router, no. A route is already the controller.
 
+That small domain layer pays off sooner than I expected. The site never talks to Hashnode. It reads posts through one `PostSource` port, and the production adapter just reads Markdown files from the GitHub backup.
+
+So Hashnode is now optional.
+
+If I get tired of its editor, I can write Markdown straight into a GitHub repo, point the build at it, and nothing else changes. A different source later is one new adapter, not a rewrite ;)
+
 4. **Open-source quality.** README, ADRs, changelog, licenses.
 
 5. **Report back.** Status after every PR, screenshots after every step.
