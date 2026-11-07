@@ -28,17 +28,14 @@ I picked option 2. My wallet approved ;)))
 
 The trick: Hashnode already backs up every post to a GitHub repo as Markdown. That backup is a perfectly good content source. I keep writing on Hashnode, and the site builds from the backup.
 
-```mermaid
-flowchart LR
-    subgraph Before
-        H1[Hashnode editor] --> API[GraphQL API<br/>now paid]
-        API --> V[Next.js starter<br/>on Vercel]
-    end
-    subgraph After
-        H2[Hashnode editor] --> B[GitHub backup<br/>Markdown files]
-        B -->|on publish| CI[CI: test + build]
-        CI --> W[React Router v7<br/>on Cloudflare Workers]
-    end
+```text
+Before:  Hashnode editor --> GraphQL API (now paid) --> Next.js starter on Vercel
+
+After:   Hashnode editor --> GitHub backup (Markdown)
+                                   |
+                                   | on publish
+                                   v
+                             CI: test + build --> React Router v7 on Cloudflare Workers
 ```
 
 * * *
@@ -57,9 +54,9 @@ And wrapping Claude Code is a choice for now, not a marriage.
 
 Jarvis has the same shape as this blog. The core never calls Claude directly. It goes through one `LlmPort`, and the Claude CLI is just today's adapter behind it. A raw API, another model, something local: each is one more adapter. The adapter has to bring its own tool loop, since Claude Code gives me the shell for free. Still an adapter, not a rewrite.
 
-Free to jump. Not stuck to any tech ;)
+Free to jump. Not stuck to any tech =))
 
-A small peek at the rest: a Slack gateway that only holds the socket and drops every message into a SQLite inbox, so restarting the bot never loses Slack. One queue and one session per thread. And timers that run outside every turn, which is where the wake-ups come from.
+There's more under the hood. That's the next post ;)
 
 I gave it the job from my phone, then set a few rules:
 
@@ -81,18 +78,28 @@ If I get tired of its editor, I can write Markdown straight into a GitHub repo, 
 
 The plan was eight phases. Then came the part where I scrolled the site on my phone and complained.
 
-```mermaid
-flowchart LR
-    P0[0. Bootstrap<br/>+ CI] --> P1[1. Content from<br/>GitHub backup]
-    P1 --> P2[2. Domain layer]
-    P2 --> P3[3. Markdown<br/>at build time]
-    P3 --> P4[4. Routes<br/>+ design]
-    P4 --> P5[5. SEO, RSS,<br/>OG images]
-    P5 --> P6[6. Dark mode<br/>+ search]
-    P6 --> P7[7. URL parity,<br/>perf, a11y]
-    P7 --> P8[8. Docs, deploy,<br/>DNS cut-over]
-    P8 --> F[Me, nitpicking<br/>from my phone]
-    F --> F
+```text
+ 0  Bootstrap + CI
+ |
+ 1  Content from the GitHub backup
+ |
+ 2  Domain layer
+ |
+ 3  Markdown at build time
+ |
+ 4  Routes + design
+ |
+ 5  SEO, RSS, OG images
+ |
+ 6  Dark mode + search
+ |
+ 7  URL parity, perf, a11y
+ |
+ 8  Docs, deploy, DNS cut-over
+ |
+ ∞  Me, nitpicking from my phone  <-+
+ |                                  |
+ +----------------------------------+
 ```
 
 * * *
@@ -149,15 +156,14 @@ Most of the afternoon went like this:
 
 Ten minutes later I had a PR, before/after screenshots, CI passing, a merge, and a check on the live site.
 
-```mermaid
-flowchart LR
-    A[I complain<br/>in Slack] --> B[fix + test]
-    B --> C[before/after<br/>screenshots]
-    C --> D[PR + CI]
-    D -->|green| E[merge + deploy]
-    D -->|red| B
-    E --> G[check the<br/>live site]
-    G --> A
+```text
+ I complain in Slack
+   --> fix + test
+   --> before/after screenshots
+   --> PR + CI --(red)--> back to fix
+   --> merge + deploy
+   --> check the live site
+   --> I complain again
 ```
 
 * * *
