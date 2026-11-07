@@ -9,7 +9,7 @@ tags: cloudflare, ai, reactjs, devops, agents
 
 **TL;DR:** In about 21 hours this blog moved from a Hashnode headless starter on Vercel to React Router v7 on Cloudflare Workers. That took 27 pull requests, each one green on CI, plus a production DNS switch. My job was typing opinions into Slack. My AI assistant did the rest. Most of it was impressive. Some of it taught me, the hard way, how to build a better harness.
 
----
+* * *
 
 ## Why Move at All?
 
@@ -41,7 +41,7 @@ flowchart LR
     end
 ```
 
----
+* * *
 
 ## The Setup
 
@@ -52,9 +52,13 @@ Under the hood, each Slack thread gets its own Claude Code session on my Mac. So
 I gave it the job from my phone, then set a few rules:
 
 1. **Every phase is a pull request.** CI must be green. No pushing to `main`.
+
 2. **Tests first on the core logic.** Parsing, read time, pagination, RSS, sitemap.
+
 3. **Keep the architecture light.** A small domain layer, yes. Enterprise layers on top of React Router, no. A route is already the controller.
+
 4. **Open-source quality.** README, ADRs, changelog, licenses.
+
 5. **Report back.** Status after every PR, screenshots after every step.
 
 The plan was eight phases. Then came the part where I scrolled the site on my phone and complained.
@@ -73,11 +77,11 @@ flowchart LR
     F --> F
 ```
 
----
+* * *
 
 ## The Wow Parts
 
-### 1\. It respected the process
+### 1. It respected the process
 
 27 pull requests. Every one passed CI before merge.
 
@@ -85,13 +89,13 @@ For the big ones, a second agent reviewed the branch on its own, ran the tests a
 
 Honestly, it followed the process better than some humans I've worked with. No names. You know who you are =)))
 
-### 2\. The numbers aren't just vibes
+### 2. The numbers aren't just vibes
 
 - **Lighthouse (mobile) performance:** from **44-64** up to **95-96**. Accessibility, best practices and SEO all hit 100.
 - **URL parity:** a test checks all 100 working URLs from the old site against the new build. None of them break.
 - **Tests:** around 200 unit tests and 168 integration tests running against the built Worker.
 
-### 3\. It did the DNS cut-over itself
+### 3. It did the DNS cut-over itself
 
 I was logged in to Cloudflare and Vercel in my browser.
 
@@ -104,7 +108,7 @@ Jarvis clicked through both dashboards:
 
 Usually I'm the one who forgets that last step.
 
-### 4\. The hover preview
+### 4. The hover preview
 
 I asked for "a fancy preview when you hover a card".
 
@@ -118,7 +122,7 @@ Then I said the header flashed for a split second inside the preview. It fixed i
 
 I would not have checked every 30 ms. I would have squinted at it once and called it done.
 
-### 5\. Feedback from the couch
+### 5. Feedback from the couch
 
 Most of the afternoon went like this:
 
@@ -139,13 +143,13 @@ flowchart LR
     G --> A
 ```
 
----
+* * *
 
 ## The Not-So-Wow Parts
 
 Most of these aren't about the model. They're about the harness around it. I built that harness, so this section is partly about me =))
 
-### 1\. Agents don't wait. They stop.
+### 1. Agents don't wait. They stop.
 
 A chat-driven agent only works while it's replying to a message. Once the reply ends, nothing is running.
 
@@ -176,7 +180,7 @@ stateDiagram-v2
 
 **Lesson for harness builders:** "I'll do it once CI finishes" is a promise nobody is around to keep. Give your agent a way to schedule a wake-up that runs outside the conversation: poll whatever it's waiting on, then hand control back. Also keep each step well under any timeout you set.
 
-### 2\. Two writers, one repo
+### 2. Two writers, one repo
 
 Early on, an agent I thought I'd stopped was still running. Two sessions wrote to the same folder and overwrote each other's files. Phase 0 had also gone straight to `main`.
 
@@ -184,7 +188,7 @@ Fix: kill everything but one, reset `main`, and redo phase 0 as PR #1.
 
 **Lesson:** one agent per repo, and make "is something else already writing here?" a check your harness runs, not something you hope for.
 
-### 3\. Confident, then wrong
+### 3. Confident, then wrong
 
 A few highlights from cut-over day alone:
 
@@ -196,13 +200,13 @@ Each one was caught within minutes, mostly by Jarvis itself. But "verify before 
 
 **Lesson:** when you check a deploy, look for something only the new build can have.
 
-### 4\. Taste is still mine
+### 4. Taste is still mine
 
 Page names, colors, "no, remove the card". All my calls. As they should be.
 
 After I renamed one page three times in five minutes, it stopped auto-merging and started asking first. Smart move. Annoying, but smart ;)
 
----
+* * *
 
 ## Takeaways
 
@@ -219,7 +223,7 @@ After I renamed one page three times in five minutes, it stopped auto-merging an
 - one writer per repo, enforced
 - for anything that's purely taste, ask a human before merging
 
----
+* * *
 
 ## Final Thoughts
 
@@ -231,8 +235,10 @@ The biggest lesson wasn't about React Router or Workers:
 
 Give it a process and it's excellent. Leave it waiting with nothing to wake it up, and it will happily take a 1.6-hour nap.
 
-Same as people, honestly. Just faster at everything else =)))
+Same as people, honestly. Just faster at everything else ;)))
 
----
+Coming up next: how Jarvis itself is built. The Slack bot, the one-session-per-thread setup, the wake-up timers, and all the places it still trips over its own shoelaces. Stay tuned =)))
+
+* * *
 
 Written by J., reviewed by Kai.
