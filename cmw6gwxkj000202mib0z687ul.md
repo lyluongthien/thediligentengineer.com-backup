@@ -177,7 +177,9 @@ stateDiagram-v2
     Stalled --> Working: a timer checks X, wakes it (the fix)
 ```
 
-**Lesson for harness builders:** "I'll do it once CI finishes" is a promise nobody is around to keep. Wake the agent on events where you can, like a CI webhook or a background job exiting, and fall back to a timer that polls. Never wait inside a step.
+"I'll do it once CI finishes" is a promise nobody is around to keep.
+
+So now the harness has a wake-up that lives outside the conversation. It polls CI, a URL, whatever the agent is waiting on, and hands the thread back when it's ready. The agent never waits inside a step.
 
 ### 2. Shared state bites
 
@@ -190,7 +192,9 @@ Running several agents on one repo is not the problem. Git solved that long ago:
 
 The browser had the same problem later. Jarvis and another session were both driving my one Brave window. The other session switched tabs while Jarvis was pasting, so Jarvis's select-all and paste landed on a GitHub settings page instead of Hashnode. Nothing broke, by luck.
 
-**Lesson:** anything an agent writes to needs to be its own. A worktree for code, a separate browser profile for the web. And "stop" should kill the process, not just end the chat.
+Same bug, twice. If an agent writes to it, it should own it.
+
+A worktree for the code. A browser profile for the web. And "stop" kills the process, not just the chat.
 
 ### 3. Confident, then wrong
 
@@ -202,7 +206,9 @@ A few highlights from cut-over day alone:
 
 Each one was caught within minutes, mostly by Jarvis itself. The first and the last share a root cause: Jarvis trusted a check without asking whether it could pass for the wrong reason.
 
-**Lesson:** a check should be able to fail. Expose the commit SHA and compare it after a deploy. Pin the runtime instead of trusting `node` on PATH.
+A check that can't fail isn't a check.
+
+Compare the commit SHA after a deploy, not some string that might already be there. Pin the runtime, don't trust whatever `node` happens to be on PATH.
 
 ### 4. Taste is still mine
 
