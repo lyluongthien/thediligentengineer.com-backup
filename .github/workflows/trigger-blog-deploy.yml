@@ -1,4 +1,5 @@
 # Hashnode pushes every published or updated article here; this tells lyluongthien/blog to rebuild and
+# redeploy (its .github/workflows/deploy.yml listens for "content-updated").
 # Needs a secret BLOG_DISPATCH_TOKEN: a fine-grained token for lyluongthien/blog with Contents: read & write
 # (required by the repository_dispatch API) and nothing else. Fine-grained tokens expire: when it lapses,
 # only this repository's run turns red - renew it then.
