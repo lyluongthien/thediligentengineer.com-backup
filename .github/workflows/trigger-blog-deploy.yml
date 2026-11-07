@@ -1,0 +1,27 @@
+# Hashnode pushes every published or updated article here; this tells lyluongthien/blog to rebuild and
+# Needs a secret BLOG_DISPATCH_TOKEN: a fine-grained token for lyluongthien/blog with Contents: read & write
+# (required by the repository_dispatch API) and nothing else. Fine-grained tokens expire: when it lapses,
+# only this repository's run turns red - renew it then.
+name: Trigger blog deploy
+
+on:
+  push:
+    branches: [main]
+
+permissions: {}
+
+jobs:
+  dispatch:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2
+    steps:
+      - name: Ask the blog to rebuild
+        env:
+          TOKEN: ${{ secrets.BLOG_DISPATCH_TOKEN }}
+          SHA: ${{ github.sha }}
+        run: |
+          curl -fsS -X POST \
+            -H "Authorization: Bearer $TOKEN" \
+            -H "Accept: application/vnd.github+json" \
+            https://api.github.com/repos/lyluongthien/blog/dispatches \
+            -d "{\"event_type\":\"content-updated\",\"client_payload\":{\"sha\":\"$SHA\"}}"
