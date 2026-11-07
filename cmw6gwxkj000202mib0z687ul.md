@@ -24,7 +24,7 @@ So the choice was simple:
 1. Pay a monthly fee to read my own writing.
 2. Stop depending on the API.
 
-I picked option 2. My wallet approved.
+I picked option 2. My wallet approved ;)))
 
 The trick: Hashnode already backs up every post to a GitHub repo as Markdown. That backup is a perfectly good content source. I keep writing on Hashnode, and the site builds from the backup.
 
@@ -87,7 +87,7 @@ flowchart LR
 
 For the big ones, a second agent reviewed the branch on its own, ran the tests and left findings on the PR. Blockers were fixed before merge.
 
-Honestly, it followed the process better than some humans I've worked with. No names. You know who you are.
+Honestly, it followed the process better than some humans I've worked with. No names. You know who you are =)))
 
 ### 2. The numbers aren't just vibes
 
@@ -147,7 +147,7 @@ flowchart LR
 
 ## The Not-So-Wow Parts
 
-Most of these aren't about the model. They're about the harness around it. I built that harness, so this section is partly about me.
+Most of these aren't about the model. They're about the harness around it. I built that harness, so this section is partly about me =))
 
 ### 1. Agents don't wait. They stop.
 
@@ -193,7 +193,7 @@ Fix: kill everything but one, reset `main`, and redo phase 0 as PR #1.
 A few highlights from cut-over day alone:
 
 - It announced the deploy was live because the page contained a certain string. That string is also in the Google Analytics snippet. It wasn't live.
-- It broke CI twice in an hour, both times by tripping its own tests. Once it even wrote a code comment containing the exact text its new test banned. Galaxy brain.
+- It broke CI twice in an hour, both times by tripping its own tests. Once it even wrote a code comment containing the exact text its new test banned. Galaxy brain ;))
 - It killed my local dev server, then couldn't start it again, because `node` in its shell was really Bun's Node shim.
 
 Each one was caught within minutes, mostly by J. itself. But "verify before you announce" had to be learned more than once.
@@ -204,7 +204,7 @@ Each one was caught within minutes, mostly by J. itself. But "verify before you 
 
 Page names, colors, "no, remove the card". All my calls. As they should be.
 
-After I renamed one page three times in five minutes, it stopped auto-merging and started asking first. Smart move. Annoying, but smart.
+After I renamed one page three times in five minutes, it stopped auto-merging and started asking first. Smart move. Annoying, but smart ;)
 
 * * *
 
@@ -235,7 +235,7 @@ The biggest lesson wasn't about React Router or Workers:
 
 Give it a process and it's excellent. Leave it waiting with nothing to wake it up, and it will happily take a 1.6-hour nap.
 
-Same as people, honestly. Just faster at everything else.
+Same as people, honestly. Just faster at everything else ;)))
 
 * * *
 
