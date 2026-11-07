@@ -53,6 +53,14 @@ Claude Code is already a harness around the model. Jarvis is a harness around Cl
 
 So when I say "harness" below, I mean my outer layer, not Claude Code.
 
+And wrapping Claude Code is a choice for now, not a marriage.
+
+Jarvis has the same shape as this blog. The core never calls Claude directly. It goes through one `LlmPort`, and the Claude CLI is just today's adapter behind it. A raw API, another model, something local: each is one more adapter. The adapter has to bring its own tool loop, since Claude Code gives me the shell for free. Still an adapter, not a rewrite.
+
+Free to jump. Not stuck to any tech ;)
+
+A small peek at the rest: a Slack gateway that only holds the socket and drops every message into a SQLite inbox, so restarting the bot never loses Slack. One queue and one session per thread. And timers that run outside every turn, which is where the wake-ups come from.
+
 I gave it the job from my phone, then set a few rules:
 
 1. **Every phase is a pull request.** CI must be green. No pushing to `main`.
@@ -232,7 +240,7 @@ This blog is the result: Lighthouse 95, no paid API.
 
 Most of my fixes went into the harness, not the prompts. Give the agent a process and it's excellent. Leave it waiting with nothing to wake it up, and it will happily take a 1.6-hour nap ;)))
 
-Coming up next: how Jarvis itself is built. The Slack bot, the one-session-per-thread setup, the wake-up timers, and all the places it still trips over its own shoelaces. Stay tuned =)))
+Coming up next: how Jarvis itself is built. The gateway and the inbox, one session per thread, the timers outside the conversation, the `LlmPort` that keeps the model swappable, and all the places it still trips over its own shoelaces. Stay tuned =)))
 
 * * *
 
