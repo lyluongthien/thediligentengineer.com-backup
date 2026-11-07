@@ -49,6 +49,10 @@ The assistant is Jarvis, a Slack bot I built.
 
 Under the hood, each Slack thread gets its own Claude Code session on my Mac. So it isn't just a chat window. It has a real shell, git, and a browser it can click through.
 
+Claude Code is already a harness around the model. Jarvis is a harness around Claude Code. A harness of harnesses =)))
+
+So when I say "harness" below, I mean my outer layer, not Claude Code.
+
 I gave it the job from my phone, then set a few rules:
 
 1. **Every phase is a pull request.** CI must be green. No pushing to `main`.
